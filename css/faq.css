@@ -11,6 +11,7 @@
   gap: 0 !important;
 }
 #faq .faq-prompt {
+  color: var(--dark-color);
   text-align: center;
 }
 #accordl,
@@ -20,6 +21,7 @@
 .accordion-item,
 .accordion-header,
 .accordion-button {
+  color: var(--dark-color) !important;
   background-color: transparent !important;
 }
 .accordion-item {

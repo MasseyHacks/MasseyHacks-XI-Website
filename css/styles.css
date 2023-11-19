@@ -2,7 +2,7 @@
 
 :root {
   /* Colours */
-  --dark-color: #434667;
+  --dark-color: rgba(255,255,255,0.8);
   --bg-colour: #ffffff;
   --nav-burger-width: clamp(2rem, 2.5rem, 3rem);
   /* --nav-burger-width: clamp(4rem, 4rem, 4rem); */
@@ -141,7 +141,7 @@ p {
 
 .glass-card {
   border-radius: 1rem;
-  background: rgba(0, 0, 0, 0.081);
+  background: rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
