@@ -20,9 +20,8 @@ for (var x = 0; x < matrix[0].length; x++) {
     drops[x] = c.width - (x * font_size) + 300;
 }
 
+
 function draw() {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
-    ctx.fillRect(0, 0, c.width, c.height);
 
     for (var i = 0; i < drops.length; i++) {
         var rowIndex = drops[i] % matrix.length;
@@ -43,7 +42,7 @@ function draw() {
     }
 }
 
-setInterval(draw, 3);
+setInterval(draw, 15);
 
 var leftMatrix = [
     "1 1 1 1 1 1 1 1 1 1 1 ",
@@ -61,9 +60,7 @@ for (var x = 0; x < leftMatrix[0].length; x++) {
 }
 
 function drawLeft() {
-    //ctx.fillStyle = "rgba(0, 0, 0, -1000)";
-    //ctx.fillRect(0, 0, c.width, c.height);
-
+    
     for (var i = 0; i < leftDrops.length; i++) {
         var rowIndex = leftDrops[i] % leftMatrix.length;
         var text = leftMatrix[rowIndex][i];
@@ -81,6 +78,17 @@ function drawLeft() {
 
         leftDrops[i]++;
     }
+    
 }
 
-setInterval(drawLeft, 3);
+setInterval(drawLeft, 15);
+
+
+var backgroundImage = new Image();
+backgroundImage.src = 'assets/bg2.svg'; // Replace with the path to your SVG file
+
+function drawBG() {
+    ctx.drawImage(backgroundImage, 0, 0, c.width, c.height);
+}
+
+setInterval(drawBG, 50);

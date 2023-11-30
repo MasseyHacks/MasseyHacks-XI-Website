@@ -104,9 +104,12 @@ video {
   vertical-align: baseline;
 }
 canvas {
-  display: block;
-  height: 100vh;
-  width: 100vw;
+  position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: block;
 }
 html {
   scroll-behavior: smooth !important;
