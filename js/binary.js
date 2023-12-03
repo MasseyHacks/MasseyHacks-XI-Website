@@ -20,21 +20,22 @@ for (var x = 0; x < matrix[0].length; x++) {
     drops[x] = c.width - (x * font_size) + 300;
 }
 
-
 function draw() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+    ctx.fillRect(0, 0, c.width, c.height);
 
     for (var i = 0; i < drops.length; i++) {
         var rowIndex = drops[i] % matrix.length;
         var text = matrix[rowIndex][i];
 
         // Stop raining when drops reach a certain point on the screen
-        if (drops[i] * font_size <= c.height / 2) {
+        if (drops[i] * font_size <= c.height) {
             ctx.fillStyle = "#704292";
             ctx.font = font_size + "px arial";
             ctx.fillText(text, c.width - i * font_size, drops[i] * font_size);
         }
 
-        if (drops[i] * font_size > c.height / 2 && Math.random() > 0.975) {
+        if (drops[i] * font_size > c.height && Math.random() > 0.975) {
             drops[i] = 0;
         }
 
@@ -42,7 +43,7 @@ function draw() {
     }
 }
 
-setInterval(draw, 15);
+setInterval(draw, 3);
 
 var leftMatrix = [
     "1 1 1 1 1 1 1 1 1 1 1 ",
@@ -60,35 +61,25 @@ for (var x = 0; x < leftMatrix[0].length; x++) {
 }
 
 function drawLeft() {
-    
+    ctx.fillStyle = "rgba(0, 0, 0, -1000)";
+    ctx.fillRect(0, 0, c.width, c.height);
+
     for (var i = 0; i < leftDrops.length; i++) {
         var rowIndex = leftDrops[i] % leftMatrix.length;
         var text = leftMatrix[rowIndex][i];
 
         // Stop raining when drops reach a certain point on the screen
-        if (leftDrops[i] * font_size >= c.height / 2) {
+        if (leftDrops[i] * font_size >= c.height) {
             ctx.fillStyle = "#414291";
             ctx.font = font_size + "px arial";
             ctx.fillText(text, i * font_size, leftDrops[i] * font_size);
         }
 
-        if (leftDrops[i] * font_size > c.height / 2 && Math.random() > 0.975) {
+        if (leftDrops[i] * font_size > c.height && Math.random() > 0.975) {
             leftDrops[i] = 0;
         }
 
         leftDrops[i]++;
     }
-    
 }
-
-setInterval(drawLeft, 15);
-
-
-var backgroundImage = new Image();
-backgroundImage.src = 'assets/bg2.svg'; // Replace with the path to your SVG file
-
-function drawBG() {
-    ctx.drawImage(backgroundImage, 0, 0, c.width, c.height);
-}
-
-setInterval(drawBG, 50); 
+setInterval(drawLeft,1);

@@ -93,6 +93,7 @@
     <script src="js/init.js" defer></script>
     <script src="js/anchorscroll.js" defer></script>
     <script src="js/schedule.js" defer></script>
+    <script src="js/binary.js" defer></script>
     <script
       src="js/termynal.js"
       data-termynal-container="#termynal"
@@ -112,9 +113,6 @@
     ></script>
   </head>
   <body>
-    <canvas id="c"></canvas>
-    <script src="js/binary.js"></script>
-
     <!-- Navigation menu -->
     <header>
       <nav>
@@ -132,10 +130,17 @@
           <li><a href="#partners">Partners</a></li>
         </ul>
       </nav>
+      <style>
+        canvas {
+          display: block;
+          height: 100vh;
+          width: 100vw;
+        }
+      </style>
     </header>
 
     <!-- Background -->
-    <!-- <div id="background"></div> -->
+    <div id="background"></div>
 
     <!-- Social icons on left side -->
     <div id="socialdock" class="glass-card bg-white">
@@ -197,7 +202,7 @@
             </div>
           </div>
         </div>
-
+        <canvas id="c"></canvas>
         <div id="socialhoriz">
           <a href="https://instagram.com/masseyhacks" target="_blank">
             <i class="fab fa-instagram-square"></i>
