@@ -91,4 +91,4 @@ function drawBG() {
     ctx.drawImage(backgroundImage, 0, 0, c.width, c.height);
 }
 
-setInterval(drawBG, 50);
+setInterval(drawBG, 50); 
