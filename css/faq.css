@@ -1,0 +1,65 @@
+#faq {
+  padding-bottom: 30px;
+}
+#faq h1:after {
+  content: "Frequently Asked Questions";
+}
+#faq .glass-card {
+  display: flex;
+  flex-wrap: nowrap !important;
+  align-items: flex-start;
+  gap: 0 !important;
+}
+#faq .faq-prompt {
+  color: var(--dark-color);
+  text-align: center;
+}
+#accordl,
+#accordr {
+  width: 50%;
+}
+.accordion-item,
+.accordion-header,
+.accordion-button {
+  color: var(--dark-color) !important;
+  background-color: transparent !important;
+}
+.accordion-item {
+  border-bottom: none !important;
+}
+.accordion-button,
+.accordion-header {
+  box-shadow: none !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.accordion-button::after {
+  margin-left: 0 !important;
+  margin-right: 6px !important;
+  order: -1 !important;
+}
+.accordion-body {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+#accordl .accordion-item:last-child .accordion-body,
+#accordr .accordion-item:last-child .accordion-body {
+  padding-bottom: var(--bs-accordion-body-padding-y) !important;
+}
+@media screen and (max-width: 800px) {
+  #faq h1:after {
+    content: "FAQ";
+  }
+  #faq .glass-card {
+    display: block !important;
+  }
+  #accordl,
+  #accordr {
+    width: 100%;
+  }
+  #accordl .accordion-item:last-child .accordion-body {
+    padding-bottom: 0 !important;
+  }
+}

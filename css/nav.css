@@ -1,0 +1,132 @@
+.unstyled-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: clamp(1.4rem, 2.5vw, 1.5rem);
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 2rem;
+  top: 2rem;
+  z-index: 1000;
+
+  /* border-radius: 5%; */
+
+  padding: 0.3rem;
+  transition: background-color 500ms;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 470px) {
+  nav {
+    left: 1rem;
+    top: 1rem;
+  }
+}
+
+.nav-active {
+  /* border-radius: 3%; */
+  opacity: 0.8;
+}
+
+/* NAV BURGER ICON */
+.nav-burger {
+  display: block;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+
+  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  transition:border-radius .2s;
+}
+
+.nav-burger > div {
+  background-color: black;
+
+  width: var(--nav-burger-width);
+  height: var(--nav-burger-line-height);
+  margin: calc(
+      (
+          (var(--nav-burger-width)) * 0.7071067812 -
+            var(--nav-burger-line-height) * 2
+        ) / 2
+    )
+    0;
+  /* border-radius: 0.3rem; */
+}
+.nav-burger > div:nth-child(1) {
+  transform-origin: left;
+  transition-property: transform, background-color, box-shadow;
+  transition-duration: 500ms;
+}
+
+.nav-burger > div:nth-child(2) {
+  transform-origin: left;
+  transition-property: transform, background-color, box-shadow;
+  transition-duration: 500ms;
+}
+
+.nav-burger > div:nth-child(3) {
+  transform-origin: left;
+  transition-property: transform, background-color, box-shadow;
+  transition-duration: 500ms;
+}
+
+/* x button */
+.nav-burger-active > div:nth-child(1) {
+  transform: rotate(45deg);
+  background-color: black;
+}
+
+.nav-burger-active > div:nth-child(2) {
+  background-color: transparent;
+  box-shadow: none;
+  transform: translateX(-1.25rem);
+}
+
+.nav-burger-active > div:nth-child(3) {
+  transform: rotate(-45deg);
+  background-color: black;
+}
+
+.nav-links {
+  display: flex;
+  /*align-items: end;*/
+  flex-direction: column;
+
+  max-width: 0;
+  max-height: 0;
+
+  transform: scale(0, 0);
+  transform-origin: 1rem 0;
+
+  margin: auto 0;
+  padding: 0.5rem;
+
+  transition-property: max-width, max-height, transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.nav-links-active {
+  max-width: 15.6rem;
+  max-height: 20rem;
+  transform: scale(1, 1);
+}
+
+.nav-links > li {
+  margin: 0.3rem 1rem 0.3rem 0.4rem;
+}

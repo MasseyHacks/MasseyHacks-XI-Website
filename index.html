@@ -1,1 +1,1327 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasseyHacks IX</title>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://s3.amazonaws.com" />
+
+    <!-- Google Verification -->
+    <meta
+      name="google-site-verification"
+      content="mNqGBDXOgqYZfCAW6P3Ab-7dv--ePsjdB9RrqpEOe3k"
+    />
+
+    <!-- Meta -->
+    <link rel="canonical" href="https://masseyhacks.ca/" />
+    <meta
+      name="description"
+      content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!"
+    />
+    <meta property="og:title" content="MasseyHacks IX" />
+    <meta
+      property="og:description"
+      content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!"
+    />
+    <meta
+      property="og:image"
+      content="https://masseyhacks.ca/assets/logo.svg"
+    />
+    <meta property="og:url" content="https://masseyhacks.ca/" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:title" content="MasseyHacks IX" />
+    <meta
+      property="twitter:description"
+      content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- AOS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/scrollbar.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/socialdock.css" />
+    <link rel="stylesheet" href="css/termynal.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/sponsors.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/schedule.css" />
+    <link rel="stylesheet" href="css/classic-10_7_dtp.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Splide -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css"
+    />
+
+    <!-- JS Files -->
+    <script src="js/main.js" defer></script>
+    <script src="js/countdown.js" defer></script>
+    <script src="js/init.js" defer></script>
+    <script src="js/anchorscroll.js" defer></script>
+    <script src="js/schedule.js" defer></script>
+    <script
+      src="js/termynal.js"
+      data-termynal-container="#termynal"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+    <script src="js/binary.js"></script>
+
+    <!-- Navigation menu -->
+    <header>
+      <nav>
+        <div class="bg-white nav-burger" onclick="toggleNavLinks()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="bg-white unstyled-list nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#partners">Partners</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Background -->
+    <!-- <div id="background"></div> -->
+
+    <!-- Social icons on left side -->
+    <div id="socialdock" class="glass-card bg-white">
+      <a href="https://instagram.com/masseyhacks" target="_blank">
+        <i class="fab fa-instagram-square"></i>
+      </a>
+      <a href="mailto:hello@masseyhacks.ca" target="_blank">
+        <i class="fas fa-envelope-square"></i>
+      </a>
+      <a href="https://twitter.com/masseyhacks" target="_blank">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCTYmXP2HjkqhLV1OW4EDW5Q"
+        target="_blank"
+      >
+        <i class="fab fa-youtube-square"></i>
+      </a>
+      <a href="https://www.facebook.com/masseyhacks" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+    </div>
+    <script>
+      window.addEventListener("load",()=>{
+        window.addEventListener("scroll",()=>{
+          var social = document.getElementById("socialdock").getBoundingClientRect();
+          var schedule = document.querySelector(".schedule-container").getBoundingClientRect();
+          if(window.innerWidth<=1200||window.hamOpened){
+            return;
+          }
+          if((social.top<schedule.bottom&&social.top>schedule.top)||(social.bottom<schedule.bottom&&social.bottom>schedule.top)){
+            document.getElementById("socialdock").style.opacity = "0";
+          }else{
+            document.getElementById("socialdock").style.opacity = "0.8";
+          }
+        });
+      });
+    </script>
+
+    <!-- Hero -->
+    <section id="home" data-aos="zoom-out" data-aos-duration="600">
+      <div id="hero-glass" class="glass-card">
+        <img src="assets/logo.svg" alt="Logo" class="hero-logo" />
+        <h1>MasseyHacks IX</h1>
+        <p class="hero-date">May 6–7th, 2023</p>
+        <div class="countdown-border">
+          <div class="countdown" data-date="07-05-2023" data-time="5:00">
+            <div class="day">
+              <span class="num"></span><span class="word"></span>
+            </div>
+            <div class="hour">
+              <span class="num"></span><span class="word"></span>
+            </div>
+            <div class="min">
+              <span class="num"></span><span class="word"></span>
+            </div>
+            <div class="sec">
+              <span class="num"></span><span class="word"></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="socialhoriz">
+          <a href="https://instagram.com/masseyhacks" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a href="mailto:hello@masseyhacks.ca" target="_blank">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+          <a href="https://twitter.com/masseyhacks" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCTYmXP2HjkqhLV1OW4EDW5Q"
+            target="_blank"
+          >
+            <i class="fab fa-youtube-square"></i>
+          </a>
+          <a href="https://www.facebook.com/masseyhacks" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+        <div style="font-size: 1.2rem; text-align: center; margin-top: 15px;">
+Thank you all for coming. <br> See you at MasseyHacks X!
+        </div>
+
+        <a class="btn" id="transparency-report" href="./files/transparency-report.pdf">
+          Transparency Report
+        </a>
+        <!-- <div id="application-div" class="btn">
+          <div id="application-overlay">
+            <p>Apply Now</p>
+          </div>
+          <div id="application-links">
+            <a href="https://form.typeform.com/to/OLlHOhvU" target="_blank"
+              >Mentor</a
+            >
+            <a href="https://form.typeform.com/to/sYiBl4F1" target="_blank"
+              >Hacker</a
+            >
+            <a href="https://form.typeform.com/to/ltu4rNqD" target="_blank"
+              >Volunteer</a
+            >
+          </div>
+        </div> -->
+        <!-- 
+        <script>
+          var inside = false;
+          document.getElementById("hero-glass").onmouseenter = () => {
+            inside = true;
+            document.getElementById("application-div").style.animation =
+              "appexpand .15s linear forwards";
+            document.querySelector("#application-overlay p").style.animation =
+              "appfadeout .15s linear forwards";
+            setTimeout(() => {
+              if (!inside) {
+                return;
+              }
+              document.getElementById("application-overlay").style.display =
+                "none";
+              document.getElementById("application-links").style.display =
+                "flex";
+              document.getElementById("application-div").style.padding = "0";
+              document.getElementById("application-links").style.animation =
+                "appfadein .15s linear forwards";
+              document.getElementById("application-div").style.cursor = "unset";
+            }, 150);
+          };
+          document.getElementById("hero-glass").onmouseleave = () => {
+            inside = false;
+            document.getElementById("application-div").style.cursor = "pointer";
+            document.getElementById("application-links").style.animation =
+              "appfadeout .15s linear forwards";
+            setTimeout(() => {
+              if (inside) {
+                return;
+              }
+              document.getElementById("application-div").style.animation =
+                "appshrink .15s linear forwards";
+              document.getElementById("application-div").style.padding =
+                "0.6em 1.5em";
+              document.getElementById("application-links").style.display =
+                "none";
+              document.querySelector("#application-overlay p").style.animation =
+                "appfadein .15s linear forwards";
+              document.getElementById("application-overlay").style.display =
+                "block";
+            }, 150);
+          };
+
+          if (
+            "ontouchstart" in window &&
+            matchMedia("(hover: none), (pointer: coarse)").matches
+          ) {
+            document.getElementById("application-div").onclick =
+              document.getElementById("hero-glass").onmouseenter;
+            document.getElementById("hero-glass").onmouseenter = () => {};
+            document.getElementById("hero-glass").onmouseleave = () => {};
+          }
+        </script>
+      </div> -->
+    </section>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="row"
+      style="grid-auto-flow: row"
+      data-aos="fade-right"
+    >
+      <!-- The termynal container -->
+      <div
+        class="col-md-9 shadow termynal"
+        id="termynal"
+        data-termynal
+        data-ty-typeDelay="40"
+        data-ty-lineDelay="700"
+      >
+        <span data-ty="input" data-ty-prompt=">>>">what_is_masseyhacks()</span>
+        <span data-ty
+          >MasseyHacks is a high school hackathon — an event perfect for
+          students fascinated by the world of technology. This 24-hour event is
+          an opportunity for students to explore the realm of computer science
+          and bring their creative ideas to life by developing a project of
+          their own. Never written a line of code in your life? Already created
+          a robot to do your homework? No matter your skill level, we invite you
+          to join us as a hacker to participate in workshops, engage in
+          countless activities, and meet other like-minded students! Create
+          memories and guide the story of your STEM journey at MasseyHacks
+          IX!</span
+        >
+      </div>
+
+      <!-- Students attended -->
+      <div class="col-md-3 icons">
+        <div id="cap" class="cap">
+          <div class="content">
+            <div>
+              <i class="fas fa-graduation-cap fa-10x"></i>
+            </div>
+            <div class="stats">
+              <h2>
+                <span
+                  class="js-counter"
+                  data-counted="false"
+                  data-target-value="1300"
+                  data-time="800"
+                  >0</span
+                >+
+              </h2>
+            </div>
+            <div>
+              <p>students have attended</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prizes awarded -->
+        <div id="trophy" class="trophy">
+          <div class="content">
+            <div>
+              <i class="fas fa-trophy fa-10x mb-3"></i>
+            </div>
+            <div class="stats">
+              <h2>
+                $<span
+                  class="js-counter"
+                  data-counted="false"
+                  data-target-value="22000"
+                  data-time="800"
+                  >0</span
+                >+
+              </h2>
+            </div>
+            <div>
+              <p>in prizes awarded</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image carousel -->
+    <div id="carousel">
+      <section class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5121.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5127.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5147.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5163.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5185.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5191.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5466.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5500.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5586.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5606.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0794.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0887.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0982.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0988.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0995.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0996.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5116.webp" loading="lazy" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- Schedule -->
+    <section id="schedule">
+      <div class="schedule-container">
+        <div class="schedule-title">
+          <h1
+            style="
+              color: #434667;
+              text-shadow: 0.125rem 0.125rem var(--pink-colour);
+              font-weight: bold;
+            "
+          >
+            Schedule
+          </h1>
+          <h5
+            style="
+              color: #434667;
+              text-shadow: 0.085rem 0.085rem var(--pink-colour);
+            "
+          >
+            Click on the events for more info!
+          </h5>
+        </div>
+        <div class="timeline-wrapper"></div>
+        <h5 id="scroll_tip" style="font-style:italic;width:100%;display:flex;justify-content:center;margin-bottom:16px;color:#555;">
+          <span>Tip: shift + scroll to scroll horizontally</span>
+        </h5>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <div id="faq" class="anchack"></div>
+    <section id="faq" data-aos="fade-up">
+      <h1></h1>
+      <div class="glass-card">
+        <!-- Left column -->
+        <div class="accordion accordion-flush" id="accordl">
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="l1-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#l1"
+                aria-expanded="false"
+                aria-controls="l1"
+              >
+                How do I apply?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="l1"
+              aria-labelledby="l1-heading"
+              data-bs-parent="#accordl"
+            >
+              <div class="accordion-body">
+                Applications have closed. Join our mailing list to be notified
+                when applications open for MasseyHacks X!
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="l2-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#l2"
+                aria-expanded="false"
+                aria-controls="l2"
+              >
+                Does it cost anything to attend?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="l2"
+              aria-labelledby="l2-heading"
+              data-bs-parent="#accordl"
+            >
+              <div class="accordion-body">
+                Nope, MasseyHacks is absolutely free to attend!
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="l3-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#l3"
+                aria-expanded="false"
+                aria-controls="l3"
+              >
+                Is MasseyHacks in-person or online?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="l3"
+              aria-labelledby="l3-heading"
+              data-bs-parent="#accordl"
+            >
+              <div class="accordion-body">
+                MasseyHacks IX will be in-person. Hackers will not have the
+                option to participate fully virtually as we return to a more
+                traditional form of MasseyHacks. Unfortunately, we cannot
+                provide overnight accommodation at the MasseyHacks venue, so
+                hackers will be required to go home for the night and return in
+                the morning.
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="l4-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#l4"
+                aria-expanded="false"
+                aria-controls="l4"
+              >
+                Will food be provided?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="l4"
+              aria-labelledby="l4-heading"
+              data-bs-parent="#accordl"
+            >
+              <div class="accordion-body">
+                Yes, meals and snacks will be provided free of cost. We will
+                accommodate any food sensitivities to the best of our ability.
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="l5-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#l5"
+                aria-expanded="false"
+                aria-controls="l5"
+              >
+                What about COVID-19?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="l5"
+              aria-labelledby="l5-heading"
+              data-bs-parent="#accordl"
+            >
+              <div class="accordion-body">
+                We will have masks available and provided upon request. Any
+                individuals who are sick or experiencing symptoms will be moved
+                to an isolation room and asked to go home. This information may
+                be updated in the future to further reflect local, provincial,
+                and federal guidelines.
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="l6-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#l6"
+                aria-expanded="false"
+                aria-controls="l6"
+              >
+                Do I need a team to participate?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="l6"
+              aria-labelledby="l6-heading"
+              data-bs-parent="#accordl"
+            >
+              <div class="accordion-body">
+                You don't need to be in a team to participate in MasseyHacks!
+                It's up to you whether you choose to fly solo or group up with
+                your friends. And who knows: you might meet some cool new people
+                too!
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="l7-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#l7"
+                aria-expanded="false"
+                aria-controls="l7"
+              >
+                What is the Code of Conduct?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="l7"
+              aria-labelledby="l7-heading"
+              data-bs-parent="#accordl"
+            >
+              <div class="accordion-body">
+                All hackers must abide by the
+                <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                  >Code of Conduct</a
+                >.
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+        </div>
+        <!-- Right column ---------------------------------------------------------------------->
+        <div class="accordion accordion-flush" id="accordr">
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="r1-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#r1"
+                aria-expanded="false"
+                aria-controls="r1"
+              >
+                Who can participate?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="r1"
+              aria-labelledby="r1-heading"
+              data-bs-parent="#accordr"
+            >
+              <div class="accordion-body">
+                MasseyHacks welcomes students from grades 7-12.
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="r2-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#r2"
+                aria-expanded="false"
+                aria-controls="r2"
+              >
+                Do I need programming experience to participate?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="r2"
+              aria-labelledby="r2-heading"
+              data-bs-parent="#accordr"
+            >
+              <div class="accordion-body">
+                Not at all! At MasseyHacks, we'll teach you the fundamentals you
+                need to know to make your project through beginner workshops and
+                mentors who will assist you if you ever need any help.
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="r3-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#r3"
+                aria-expanded="false"
+                aria-controls="r3"
+              >
+                How many people can I have on my team?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="r3"
+              aria-labelledby="r3-heading"
+              data-bs-parent="#accordr"
+            >
+              <div class="accordion-body">
+                You can have as many as 4 people per team!
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="r4-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#r4"
+                aria-expanded="false"
+                aria-controls="r4"
+              >
+                Where is MasseyHacks being held?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="r4"
+              aria-labelledby="r4-heading"
+              data-bs-parent="#accordr"
+            >
+              <div class="accordion-body">
+                MasseyHacks will be held at
+                <a href="https://goo.gl/maps/4AGgpJL6Ha6UbMEx8"
+                  >Vincent Massey Secondary School</a
+                >
+                at 1800 Liberty St, Windsor, ON.
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="r5-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#r5"
+                aria-expanded="false"
+                aria-controls="r5"
+              >
+                Will MasseyHacks run overnight?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="r5"
+              aria-labelledby="r5-heading"
+              data-bs-parent="#accordr"
+            >
+              <div class="accordion-body">
+                Unfortunately,
+                <span style="font-weight: bold"
+                  >we cannot provide overnight accommodation</span
+                >
+                at the MasseyHacks venue, so hackers will be required to leave
+                the venue Saturday evening and return to the venue Sunday
+                morning. However, we will still be providing mentorship and
+                support for hackers throughout the night as they continue
+                working on their projects.
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="r6-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#r6"
+                aria-expanded="false"
+                aria-controls="r6"
+              >
+                What do I need to bring?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="r6"
+              aria-labelledby="r6-heading"
+              data-bs-parent="#accordr"
+            >
+              <div class="accordion-body">
+                We recommend bringing the following:
+                <ul style="list-style-position: inside">
+                  <li>
+                    a piece of photo ID for check-in (e.g. student card,
+                    passport, or drivers license)
+                  </li>
+                  <li>your laptop</li>
+                  <li>laptop/phone chargers</li>
+                </ul>
+                <br />
+                Food, beverages, and the rest will all be provided! School
+                computers will be available for use during the event, but we
+                cannot guarantee one for everyone.
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+          <!-- Begin question -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="r7-heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#r7"
+                aria-expanded="false"
+                aria-controls="r7"
+              >
+                What activities and workshops will be at MasseyHacks?
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse"
+              id="r7"
+              aria-labelledby="r7-heading"
+              data-bs-parent="#accordr"
+            >
+              <div class="accordion-body">
+                You can find the schedule <a href="#schedule">here</a>
+              </div>
+            </div>
+          </div>
+          <!-- End question -->
+        </div>
+      </div>
+      <!-- Separate card -->
+      <div class="glass-card faq-prompt">
+        <p>
+          If you have any questions or would like to inform us of any issues,
+          please email us at
+          <a href="mailto:hello@masseyhacks.ca">hello@masseyhacks.ca</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Sponsors -->
+    <div id="sponsors" class="anchack"></div>
+    <section id="sponsors" data-aos="fade-up">
+      <h1>SPONSORS</h1>
+      <div class="glass-card rounded sponsor_prompt">
+        <!-- Sponsorship Prompt -->
+        <div>
+          <p>Interested in becoming a sponsor?</p>
+          <p>
+            Check out our
+            <a href="files/MH9_Sponsorship_Prospectus.pdf" target="_blank"
+              >sponsorship prospectus</a
+            >
+            and contact us at
+            <a href="mailto:sponsorship@masseyhacks.ca"
+              >sponsorship@masseyhacks.ca</a
+            >!
+          </p>
+          <p>
+            The MasseyHacks VIII transparency report is available
+            <a href="https://mh8.masseyhacks.ca/files/transparency-report.pdf"
+              >here</a
+            >.
+          </p>
+        </div>
+      </div>
+
+      <!-- Gold Tier -->
+      <div class="glass-card rounded gold">
+        <div>
+          <a
+            href="https://www.alturanft.com/"
+            class="sponsor-obj zoom"
+            target="_blank"
+            ><img
+              alt="Altura"
+              class="zoom"
+              src="images/sponsors/gold/altura.png"
+              loading="lazy"
+          /></a>
+        </div>
+        <div>
+          <a
+            href="https://www.investwindsoressex.com/en/index.aspx"
+            class="sponsor-obj zoom"
+            target="_blank"
+            ><img
+              alt="Invest WindsorEssex"
+              class="zoom"
+              src="images/sponsors/gold/investwe.png"
+              loading="lazy"
+          /></a>
+        </div>
+        <div>
+          <a href="http://cw-e.ca/" class="sponsor-obj zoom" target="_blank"
+            ><img
+              alt="Connecting Windsor-Essex"
+              class="zoom"
+              src="images/sponsors/gold/cw-e.png"
+              loading="lazy"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Silver Tier -->
+      <div class="glass-card rounded silver">
+        <a
+          class="sponsor-obj zoom"
+          href="https://www.wetech-alliance.com/"
+          target="_blank"
+          ><img
+            alt="We-Tech Alliance"
+            class="zoom"
+            src="images/sponsors/silver/wetech.png"
+            loading="lazy"
+        /></a>
+        <a
+          class="sponsor-obj zoom"
+          href="https://stclaircollege.ca/"
+          target="_blank"
+          ><img
+            alt="St. Clair College"
+            class="zoom"
+            src="images/sponsors/silver/stclair.png"
+            loading="lazy"
+        /></a>
+      </div>
+
+      <!-- Bronze Tier -->
+      <div class="glass-card rounded bronze">
+        <a class="sponsor-obj zoom" href="https://gen.xyz/" target="_blank"
+          ><img
+            alt="Gen.XYZ"
+            class="zoom"
+            src="images/sponsors/bronze/xyz.png"
+            loading="lazy"
+        /></a>
+        <a
+          class="sponsor-obj zoom"
+          href="https://www.taskade.com/"
+          target="_blank"
+          ><img
+            alt="Taskade"
+            class="zoom"
+            src="images/sponsors/bronze/taskade-logo-vector.svg"
+            loading="lazy"
+        /></a>
+        <a
+          class="sponsor-obj zoom"
+          href="https://www.wfcu.ca/Personal/"
+          target="_blank"
+          ><img
+            alt="WFCU"
+            class="zoom"
+            src="images/sponsors/bronze/wfcu.png"
+            loading="lazy"
+        /></a>
+        <a
+          class="sponsor-obj zoom"
+          href="https://www.interviewcake.com/"
+          target="_blank"
+          ><img
+            alt="Interview Cake"
+            class="zoom"
+            src="images/sponsors/bronze/interview_cake.svg"
+            loading="lazy"
+        /></a>
+        <a
+          class="sponsor-obj zoom"
+          href="https://windsor.ieee.ca/"
+          target="_blank"
+          ><img
+            alt="IEEE Windsor Section"
+            class="zoom"
+            src="images/sponsors/bronze/ieee.png"
+            loading="lazy"
+        /></a>
+        <a
+          class="sponsor-obj zoom"
+          href="https://www.uwindsor.ca/science/computerscience/"
+          target="_blank"
+          ><img
+            alt="University of Windsor"
+            class="zoom"
+            src="images/sponsors/bronze/uwindsor.png"
+            loading="lazy"
+        /></a>
+        <a
+          class="sponsor-obj zoom"
+          href="https://artofproblemsolving.com/"
+          target="_blank"
+          ><img
+            alt="Art of Problem Solving"
+            class="zoom"
+            src="images/sponsors/bronze/aops.svg"
+            loading="lazy"
+        /></a>
+        <a
+          class="sponsor-obj zoom"
+          href="https://mule.to/p40j"
+          target="_blank"
+          ><img
+            alt="Sticker Mule"
+            class="zoom"
+            src="images/sponsors/bronze/stickermule.png"
+            loading="lazy"
+        /></a>
+      </div>
+      <div class="glass-card rounded sponsor_prompt">
+        <div>
+          Special thanks to <span style="font-weight: bold;">Alex Millerman</span>
+        </div>
+      </div>
+      <!-- Partners -->
+      <div id="partners" class="anchack"></div>
+      <section id="partners" data-aos="fade-up">
+        <h1>PARTNERS</h1>
+        <div class="glass-card rounded silver">
+          <a
+            class="sponsor-obj zoom"
+            href="https://www.hackthenorth.ca/"
+            target="_blank"
+            ><img
+              alt="Hack the North"
+              class="zoom"
+              src="images/sponsors/partners/hack-the-north.svg"
+              loading="lazy"
+          /></a>
+        </div>
+      </section>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container my-0 px-5">
+        <div class="row footer py-5 justify-content-between">
+          <div class="col-lg-5 col-xxl-4 text-left" style="margin: auto 0">
+            <h1 class="footer-title my-3" style="font-weight: 500">
+              MasseyHacks IX
+            </h1>
+            <p class="footer-address">
+              Vincent Massey Secondary School
+              <br />
+              1800 Liberty St, Windsor, ON N9E 1J2
+              <br />
+            </p>
+            <p class="copyright-text">
+              Copyright &copy; 2023 MasseyHacks
+              <br />
+              &lt;/&gt; made by the MasseyHacks Team with
+              <i class="fas fa-mug-hot"></i>
+            </p>
+          </div>
+          <div class="col-lg-2 justify-content-center footer-nav">
+            <div class="footer-links mt-2 d-inline-block">
+              <a class="footer-link" href="#home">Home</a>
+              <br />
+              <a class="footer-link" href="#about">About</a>
+              <br />
+              <a class="footer-link" href="#schedule">Schedule</a>
+              <br />
+              <a class="footer-link" href="#faq">FAQ</a>
+              <br />
+              <a class="footer-link" href="#sponsors">Sponsors</a>
+              <br />
+              <a class="footer-link" href="#partners">Partners</a>
+            </div>
+          </div>
+          <div
+            class="col-lg-5 d-flex align-items-center justify-content-center"
+          >
+            <div class="d-inline-block footer-email-social">
+              <!-- Begin Mailchimp Signup Form -->
+              <div>
+                <div id="mc_embed_signup" class="d-block w-100">
+                  <form
+                    action="https://masseyhacks.us17.list-manage.com/subscribe/post?u=a94f560f49609f97702adaac7&amp;id=9434a090dc"
+                    method="post"
+                    id="mc-embedded-subscribe-form"
+                    name="mc-embedded-subscribe-form"
+                    class="validate p-0"
+                    target="_blank"
+                    novalidate
+                  >
+                    <div id="mc_embed_signup_scroll">
+                      <div class="mc-field-group m-0 w-100">
+                        <label for="mce-EMAIL">
+                          <h3
+                            id="joml"
+                            class="font-weight-bold"
+                            style="
+                              font-size: clamp(1rem, 1.5rem, 2rem);
+                              font-weight: 600;
+                            "
+                          >
+                            Join our mailing list!
+                          </h3>
+                        </label>
+                        <div class="row mt-3 mx-0 gap-3">
+                          <div class="col p-0">
+                            <input
+                              type="email"
+                              value=""
+                              name="EMAIL"
+                              id="mce-EMAIL"
+                              placeholder="Email address"
+                              required
+                            />
+                          </div>
+                          <div class="col-4 p-0 fit-content">
+                            <div class="optionalParent h-100 fit-content">
+                              <div class="clear foot d-block h-100">
+                                <button class="footer-btn">Sign Up</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        style="position: absolute; left: -5000px"
+                        aria-hidden="true"
+                      >
+                        <input
+                          type="text"
+                          name="b_a94f560f49609f97702adaac7_9434a090dc"
+                          tabindex="-1"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <script src="js/mc-validate.js"></script>
+                    <script>
+                      (function ($) {
+                        window.fnames = new Array();
+                        window.ftypes = new Array();
+                        fnames[0] = "EMAIL";
+                        ftypes[0] = "email";
+                        fnames[1] = "FNAME";
+                        ftypes[1] = "text";
+                        fnames[2] = "LNAME";
+                        ftypes[2] = "text";
+                        fnames[3] = "ADDRESS";
+                        ftypes[3] = "address";
+                        fnames[4] = "PHONE";
+                        ftypes[4] = "phone";
+                        fnames[5] = "MMERGE5";
+                        ftypes[5] = "text";
+                        fnames[6] = "MMERGE6";
+                        ftypes[6] = "text";
+                        fnames[7] = "MMERGE7";
+                        ftypes[7] = "number";
+                        fnames[8] = "MMERGE8";
+                        ftypes[8] = "text";
+                        fnames[9] = "MMERGE9";
+                        ftypes[9] = "date";
+                      })(jQuery);
+                      var $mcj = jQuery.noConflict(true);
+                    </script>
+                    <!--End mc_embed_signup-->
+                  </form>
+                </div>
+              </div>
+              <div class="d-block">
+                <div class="row footer-social justify-content-left pt-2">
+                  <div class="col">
+                    <a href="mailto:hello@masseyhacks.ca" target="_blank">
+                      <i class="far fa-envelope"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="https://instagram.com/masseyhacks" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="https://twitter.com/masseyhacks" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a
+                      href="https://www.youtube.com/channel/UCTYmXP2HjkqhLV1OW4EDW5Q"
+                      target="_blank"
+                    >
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a
+                      href="https://www.facebook.com/masseyhacks"
+                      target="_blank"
+                    >
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="mlh-code-of-conduct footer-link mt-3"
+                href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                target="_blank"
+                >Code of Conduct</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      (function ($) {
+        var $window = $(window),
+          $html = $("#hero-glass");
+        function resize() {
+          if ($window.width() <= 600) {
+            return $html.removeClass("glass-card");
+          }
+          $html.addClass("glass-card");
+        }
+        $window.resize(resize).trigger("resize");
+      })(jQuery);
+    </script>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Splide -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          type: "loop",
+          autoScroll: {
+            speed: 1.3,
+            rewind: false,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+          },
+          fixedWidth: "fit-content",
+          gap: "16px",
+          pagination: false,
+          arrows: false,
+          drag: "free",
+          snap: false,
+          flickPower: 100,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+        });
+        splide.mount(window.splide.Extensions);
+      });
+    </script>
+    <!-- <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a> -->
+  </body>
+</html>

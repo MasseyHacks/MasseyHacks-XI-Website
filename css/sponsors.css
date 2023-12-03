@@ -1,0 +1,149 @@
+#sponsors,
+#partners {
+  padding-bottom: 30px;
+}
+
+#sponsors #partners {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#sponsors h1,
+#partners h1,
+#faq h1 {
+  font-weight: bold;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+#sponsors img, #partners img{
+  vertical-align: middle;
+}
+
+.sponsor_prompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 1.5rem;
+}
+
+.gold,.silver,.bronze,.partner{
+  display:block !important;
+  text-align:center;
+}
+.gold > a,.silver > a,.bronze > a,.partner > img{
+  margin:32px;
+  vertical-align:middle !important;
+}
+.gold > img,.bronze > img,.silver > img,.partner > img{
+  height:100%;
+}
+
+.bronze img {
+  max-height: 7.8rem;
+  max-width: min(17.2rem, 80%);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.silver img {
+  max-height: 14.75rem;
+  max-width: min(18rem, 80%);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.gold > div:first-child{
+  margin-top:20px;
+}
+.gold > div{
+  width:100%;
+  padding-left:30px;
+  padding-right:30px;
+  box-sizing:border-box;
+  display:block;
+  margin-bottom:20px;
+}
+.gold img {
+  max-height: 20rem;
+  max-width: min(34rem, 100%);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.gold {
+  /* border: solid gold 2px !important; */
+  border: none;
+  /* box-shadow: 0 0 5px 1px gold, inset 0 0 5px 1px gold; */
+}
+.silver {
+  /* border: solid silver 2px !important; */
+  border: none;
+  /* box-shadow: 0 0 5px 1px silver, inset 0 0 5px 1px silver; */
+}
+.bronze {
+  /* border: solid #cd7f32 2px !important; */
+  border: none;
+  /* box-shadow: 0 0 5px 1px #cd7f32, inset 0 0 5px 1px #cd7f32; */
+}
+.partner img {
+  max-height: 15rem;
+  max-width: min(32rem, 100%);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.partner {
+  justify-content: space-between;
+}
+#about,
+#sponsors > .glass-card,
+#partners > .glass-card,
+#faq > .glass-card,
+#carousel {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  padding: 1em;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 375px) {
+  #about,
+  #sponsors > .glass-card,
+  #partners > .glass-card,
+  #faq > .glass-card,
+  #carousel {
+    width: 90%;
+  }
+  /* .partner img {
+    width: 13em;
+  } */
+}
+
+@media only screen and (min-width: 768px) {
+  #about,
+  #sponsors > .glass-card,
+  #partners > .glass-card,
+  #faq > .glass-card,
+  #carousel {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #sponsors > .glass-card,
+  #partners > .glass-card,
+  #faq > .glass-card,
+  #carousel {
+    width: 60%;
+  }
+}
