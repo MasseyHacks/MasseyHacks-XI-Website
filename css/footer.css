@@ -10,8 +10,14 @@ footer a::after {
 }
 
 footer {
-  background: #121427;
+  background: #121427 !important;
   color: white;
+}
+
+.foot{
+  color: var(--dark-color) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  z-index: 10;
 }
 
 .footer {
