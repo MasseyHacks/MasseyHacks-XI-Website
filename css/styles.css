@@ -12,6 +12,7 @@
   );
 
   scroll-behavior: auto;
+  --bg-img-padding-constant: var(--bg-row-height);
 }
 
 html,
@@ -103,6 +104,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 canvas {
   position: fixed;
       top: 0;
