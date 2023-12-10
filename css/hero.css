@@ -1,5 +1,5 @@
 .hero-logo {
-  width: 16rem;
+  width: 28rem !important;
 }
 
 #home {
@@ -136,7 +136,7 @@
 .countdown-border {
   border: solid;
   /* border-color: white; */
-  color: #434667;
+  color: var(--dark-color) !important;
   border-radius: 1rem;
   width: 100%;
   display: flex;
@@ -147,7 +147,7 @@
 .hero-date {
   font-size: 2rem;
   font-weight: 700;
-  color: #434667;
+  color: var(--dark-color);
 }
 
 .countdown {
@@ -159,7 +159,7 @@
 .countdown .hour,
 .countdown .min,
 .countdown .sec {
-  color: #434667;
+  color: var(--dark-color) !important;
   /* text-shadow: 2px 2px gray; */
   padding: 10px;
   text-align: center;

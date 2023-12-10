@@ -18,6 +18,7 @@
 #accordr {
   width: 50%;
 }
+
 .accordion-item,
 .accordion-header,
 .accordion-button {
@@ -44,6 +45,10 @@
   font-size: 1rem;
   line-height: 1.5rem;
 }
+.accordion-item:hover{
+  transform: scale(1.05);
+}
+
 #accordl .accordion-item:last-child .accordion-body,
 #accordr .accordion-item:last-child .accordion-body {
   padding-bottom: var(--bs-accordion-body-padding-y) !important;

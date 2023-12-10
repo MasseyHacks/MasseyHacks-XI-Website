@@ -4,6 +4,9 @@
   /* Colours */
   --dark-color: rgba(255,255,255,0.8);
   --bg-colour: #ffffff;
+  /* --dark-blue: rgba(4, 0, 65, 0.6); */
+  --dark-blue: rgba(47, 47, 140, 0.415);
+  /* --dark-blue: rgba(96, 8, 148, 0.638); */
   --nav-burger-width: clamp(2rem, 2.5rem, 3rem);
   /* --nav-burger-width: clamp(4rem, 4rem, 4rem); */
   --nav-burger-line-height: max(
@@ -148,10 +151,8 @@ body {
   width: 100%;
   height: calc(100% - 100vh);
 
-  overflow: hidden;
-  z-index: -1;
+  z-index: 10000;
 }
-
 
 #bg-shapes > div {
   display: flex;
@@ -172,9 +173,9 @@ p {
 }
 
 .glass-card {
-  border-radius: 1rem;
+  border-radius: 1.5vh;
   /* background: rgba(255,255,255,0.25); */
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--dark-blue);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -183,6 +184,28 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+i{
+  color:var(--dark-color);
+}
+
+.content{
+  color: var(--dark-color)
+}
+
+.white-card{
+  border-radius: 1.5vh !important;
+  /* background: rgba(100, 0, 187, 0.523); */
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.081);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 section {
   margin-bottom: 10rem;
   overflow: hidden;

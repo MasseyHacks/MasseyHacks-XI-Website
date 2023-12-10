@@ -8,7 +8,7 @@
 <stop offset="0.590243" stop-color="#37075E"/>
 <stop offset="0.848132" stop-color="#530970"/>
 <stop offset="0.900216" stop-color="#580D72"/>
-<stop offset="1" stop-color="#630A7A" stop-opacity="0.7"/>
+<stop offset="1" stop-color="#630A7A" stop-opacity="0.95"/>
 </linearGradient>
 </defs>
 </svg>
