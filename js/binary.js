@@ -42,15 +42,5 @@ function getRandomColor() {
 }
 
 
-var backgroundImage = new Image();
-backgroundImage.src = 'assets/bg2.svg'; 
-function drawBG() {
-    // ctx.fillStyle = "rgba(0, 0, 0, 1)";
-    // ctx.fillRect(0, 0, c.width, c.height);
-    ctx.drawImage(backgroundImage, 0, 0, c.width, c.height);
-}
-
-setInterval(drawBG, 30); 
-
 
 
