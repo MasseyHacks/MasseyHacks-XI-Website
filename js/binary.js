@@ -4,44 +4,43 @@ var ctx = c.getContext("2d");
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
-var matrix = [
-    "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ",
-    "0 1 1 1 1 1 1 0 1 1 1 0 1 1 1 1 1 1 0 1 1 1 1 1 1 0 1 1 1 ",
-    "0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0 1 1 0 0 0 0 0 1 ",
-    "1 0 0 0 0 1 1 0 0 1 0 1 0 0 0 0 1 1 0 0 1 0 0 1 1 0 0 1 0 ",
-    "1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 ",
-    "0 0 1 1 0 0 0 1 1 1 1 0 0 1 1 0 0 0 1 1 1 1 0 0 0 1 1 1 1 "
-];
-
-var font_size = 25;
+var font_size = 10;
+var columns = c.width / font_size;
 var drops = [];
 
-for (var x = 0; x < matrix[0].length; x++) {
-    drops[x] = (x * font_size) ;
+for (var x = 0; x < columns; x++) {
+  drops[x] = 1;
 }
 
 function draw() {
-    for (var i = 0; i < drops.length; i++) {
-        var rowIndex = drops[i] % matrix.length;
-        var text = matrix[rowIndex][i];
+  ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.fillStyle = getRandomColor();
+  ctx.font = font_size + "px arial";
 
-        // Stop raining when drops reach a certain point on the screen
-        if (drops[i] * font_size <= c.height) {
-            ctx.fillStyle = "#704292";
-            // ctx.fillStyle = "#ffffff"
-            ctx.font = font_size + "px arial";
-            ctx.fillText(text, c.width - i * font_size, drops[i] * font_size);
-        }
+  for (var i = 0; i < drops.length; i++) {
+    var text = Math.round(Math.random()); // Generate random 0 or 1
+    ctx.fillText(text, i * font_size, drops[i] * font_size);
 
-        if (drops[i] * font_size > c.height && Math.random() > 0.8) {
-            drops[i] = 0;
-        }
-
-        drops[i]++;
+    if (drops[i] * font_size > c.height && Math.random() > 0.975) {
+      drops[i] = 0;
     }
+
+    drops[i]++;
+  }
 }
 
-setInterval(draw, 50);
+setInterval(draw, 30);
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
 
 var backgroundImage = new Image();
 backgroundImage.src = 'assets/bg2.svg'; 
@@ -51,4 +50,7 @@ function drawBG() {
     ctx.drawImage(backgroundImage, 0, 0, c.width, c.height);
 }
 
-setInterval(drawBG, 200); 
+setInterval(drawBG, 30); 
+
+
+
