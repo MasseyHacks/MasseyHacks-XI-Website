@@ -170,6 +170,7 @@ h1 {
 
 p {
   font-size: 1rem;
+  color: var(--dark-color);
 }
 
 .glass-card {
