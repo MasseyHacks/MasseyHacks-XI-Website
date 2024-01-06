@@ -3,6 +3,14 @@ var ctx = c.getContext("2d");
 
 c.height = window.innerHeight;
 c.width = window.innerWidth;
+function screenSize(){
+  if (window.innerHeight != c.height || window.innerWidth != c.width){
+    c.height = window.innerHeight;
+    c.width = window.innerWidth;
+  }
+}
+
+setInterval(screenSize, 1);
 
 var font_size = 14;
 var columns = c.width / font_size;
