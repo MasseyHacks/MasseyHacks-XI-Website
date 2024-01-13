@@ -10,7 +10,7 @@ function screenSize(){
   }
 }
 
-setInterval(screenSize, 1);
+setInterval(screenSize, 1000);
 
 var font_size = 14;
 var columns = c.width / font_size;
