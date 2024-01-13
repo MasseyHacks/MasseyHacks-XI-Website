@@ -7,10 +7,10 @@
  */
 
 :root {
-  --color-bg: #252a33;
-  --color-text: #eee;
-  --color-text-subtle: #a2a2a2;
-  /* --color-bg: #ddd;
+  --color-bg: var(--dark-blue);
+  --color-text: var(--dark-color);
+  --color-text-subtle: var(--dark-color);
+  /* --color-bg: var(--dark-color);
     --color-text: #1a1e24;
     --color-text-subtle: #8F98FF; */
 }
@@ -19,7 +19,7 @@
   width: 750px;
   max-width: 100%;
   background: var(--color-bg);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   color: var(--color-text);
   font-size: 18px;

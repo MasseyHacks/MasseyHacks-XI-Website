@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MasseyHacks IX</title>
+    <title>MasseyHacks X</title>
 
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -22,12 +22,12 @@
     <link rel="canonical" href="https://masseyhacks.ca/" />
     <meta
       name="description"
-      content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!"
+      content="Windsor-Essex's 10th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks X!"
     />
-    <meta property="og:title" content="MasseyHacks IX" />
+    <meta property="og:title" content="MasseyHacks X" />
     <meta
       property="og:description"
-      content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!"
+      content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks X!"
     />
     <meta
       property="og:image"
@@ -35,10 +35,10 @@
     />
     <meta property="og:url" content="https://masseyhacks.ca/" />
     <meta property="og:type" content="website" />
-    <meta property="twitter:title" content="MasseyHacks IX" />
+    <meta property="twitter:title" content="MasseyHacks X" />
     <meta
       property="twitter:description"
-      content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!"
+      content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks X!"
     />
 
     <!-- Favicon -->
@@ -93,6 +93,7 @@
     <script src="js/init.js" defer></script>
     <script src="js/anchorscroll.js" defer></script>
     <script src="js/schedule.js" defer></script>
+    <script src="js/binary.js" defer></script>
     <script
       src="js/termynal.js"
       data-termynal-container="#termynal"
@@ -112,13 +113,39 @@
     ></script>
   </head>
   <body>
+    <!-- <div id="bg-shapes">
+      <div>
+          <img src="assets/bg-images/ellipse1.svg" alt="Ellipse"
+               style="transform: translate(-5vw, 20%); height: 100%; padding: calc(var(--bg-img-padding-constant) * 2) 0; object-fit: contain;">
+          <img src="assets/bg-images/ellipse2.svg" alt="Ellipse"
+               style="transform: translate(-10vw, -15%); height: 100%; padding: calc(var(--bg-img-padding-constant) * 2) 0; object-fit: contain;">
+          <img src="assets/bg-images/ellipse3.svg" alt="Ellipse"
+               style="transform: translate(-9.5vw, 10%); height: 100%; padding: calc(var(--bg-img-padding-constant) * 2) 0; object-fit: contain;">
+      </div>
+  
+      <div>
+          <img src="assets/bg-images/ellipse4.svg" alt="Ellipse"
+               style="transform: translate(1.5vw, 40%); height: 100%; padding: calc(var(--bg-img-padding-constant) * 2) 0; object-fit: contain;">
+          <img src="assets/bg-images/ellipse5.svg" alt="Ellipse"
+               style="transform: translate(12.5vw, 0%); height: 100%; padding: calc(var(--bg-img-padding-constant) * 2) 0; object-fit: contain;">
+          <img src="assets/bg-images/ellipse6.svg" alt="Ellipse"
+               style="transform: translate(2.2vw, -10%); height: 100%; padding: calc(var(--bg-img-padding-constant) * 2) 0; object-fit: contain;">
+          <img src="assets/bg-images/star1.svg" alt="Star"
+               style="transform: translate(-6.6vw, 50%); height: 100%; padding: calc(var(--bg-img-padding-constant) * 2) 0; object-fit: contain;">
+      </div>
+  
+      <div>
+          <img src="assets/bg-images/star2.svg" alt="Star"
+               style="transform: translate(-0.37vw, 50%); height: 100%; padding: calc(var(--bg-img-padding-constant) * 2) 0; object-fit: contain;">
+          <img src="assets/bg-images/star3.svg" alt="Star"
+               style="transform: translate(0%, 0%); height: 100%; padding: calc(var(--bg-img-padding-constant) * 2.5) 0; object-fit: contain;">
+      </div>
+  </div> -->
     <canvas id="c"></canvas>
-    <script src="js/binary.js"></script>
-
     <!-- Navigation menu -->
     <header>
       <nav>
-        <div class="bg-white nav-burger" onclick="toggleNavLinks()">
+        <div class="nav-burger bg-white" onclick="toggleNavLinks()">
           <div></div>
           <div></div>
           <div></div>
@@ -135,10 +162,10 @@
     </header>
 
     <!-- Background -->
-    <!-- <div id="background"></div> -->
+    <div id="background"></div>
 
     <!-- Social icons on left side -->
-    <div id="socialdock" class="glass-card bg-white">
+    <div id="socialdock" class="glass-card">
       <a href="https://instagram.com/masseyhacks" target="_blank">
         <i class="fab fa-instagram-square"></i>
       </a>
@@ -179,10 +206,10 @@
     <section id="home" data-aos="zoom-out" data-aos-duration="600">
       <div id="hero-glass" class="glass-card">
         <img src="assets/logo.svg" alt="Logo" class="hero-logo" />
-        <h1>MasseyHacks IX</h1>
-        <p class="hero-date">May 6–7th, 2023</p>
+        <h1>MasseyHacks X</h1>
+        <p class="hero-date">May 4-5th, 2024</p>
         <div class="countdown-border">
-          <div class="countdown" data-date="07-05-2023" data-time="5:00">
+          <div class="countdown" data-date="04-05-2024" data-time="5:00">
             <div class="day">
               <span class="num"></span><span class="word"></span>
             </div>
@@ -197,7 +224,6 @@
             </div>
           </div>
         </div>
-
         <div id="socialhoriz">
           <a href="https://instagram.com/masseyhacks" target="_blank">
             <i class="fab fa-instagram-square"></i>
@@ -218,13 +244,13 @@
             <i class="fab fa-facebook-square"></i>
           </a>
         </div>
-        <div style="font-size: 1.2rem; text-align: center; margin-top: 15px;">
+        <!-- <div style="font-size: 1.2rem; text-align: center; margin-top: 15px;">
 Thank you all for coming. <br> See you at MasseyHacks X!
         </div>
 
         <a class="btn" id="transparency-report" href="./files/transparency-report.pdf">
           Transparency Report
-        </a>
+        </a> -->
         <!-- <div id="application-div" class="btn">
           <div id="application-overlay">
             <p>Apply Now</p>
@@ -325,7 +351,7 @@ Thank you all for coming. <br> See you at MasseyHacks X!
           to join us as a hacker to participate in workshops, engage in
           countless activities, and meet other like-minded students! Create
           memories and guide the story of your STEM journey at MasseyHacks
-          IX!</span
+          X!</span
         >
       </div>
 
@@ -384,34 +410,61 @@ Thank you all for coming. <br> See you at MasseyHacks X!
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
+              <img src="./images/carousel/mhX1.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX2.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX4.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX6.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX8.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX9.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX10.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX12.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX14.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX15.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX16.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX18.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX19.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX20.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/mhX21.webp" loading="lazy" />
+            </li>
+            <li class="splide__slide">
               <img src="./images/carousel/IMG_5121.webp" loading="lazy" />
-            </li>
-            <li class="splide__slide">
-              <img src="./images/carousel/IMG_5127.webp" loading="lazy" />
-            </li>
-            <li class="splide__slide">
-              <img src="./images/carousel/IMG_5147.webp" loading="lazy" />
             </li>
             <li class="splide__slide">
               <img src="./images/carousel/IMG_5163.webp" loading="lazy" />
             </li>
             <li class="splide__slide">
-              <img src="./images/carousel/IMG_5185.webp" loading="lazy" />
-            </li>
-            <li class="splide__slide">
               <img src="./images/carousel/IMG_5191.webp" loading="lazy" />
             </li>
             <li class="splide__slide">
-              <img src="./images/carousel/IMG_5466.webp" loading="lazy" />
-            </li>
-            <li class="splide__slide">
               <img src="./images/carousel/IMG_5500.webp" loading="lazy" />
-            </li>
-            <li class="splide__slide">
-              <img src="./images/carousel/IMG_5586.webp" loading="lazy" />
-            </li>
-            <li class="splide__slide">
-              <img src="./images/carousel/IMG_5606.webp" loading="lazy" />
             </li>
             <li class="splide__slide">
               <img src="./images/carousel/DSC_0794.webp" loading="lazy" />
@@ -419,27 +472,12 @@ Thank you all for coming. <br> See you at MasseyHacks X!
             <li class="splide__slide">
               <img src="./images/carousel/DSC_0887.webp" loading="lazy" />
             </li>
-            <li class="splide__slide">
-              <img src="./images/carousel/DSC_0982.webp" loading="lazy" />
-            </li>
-            <li class="splide__slide">
-              <img src="./images/carousel/DSC_0988.webp" loading="lazy" />
-            </li>
-            <li class="splide__slide">
-              <img src="./images/carousel/DSC_0995.webp" loading="lazy" />
-            </li>
-            <li class="splide__slide">
-              <img src="./images/carousel/DSC_0996.webp" loading="lazy" />
-            </li>
-            <li class="splide__slide">
-              <img src="./images/carousel/IMG_5116.webp" loading="lazy" />
-            </li>
           </ul>
         </div>
       </section>
     </div>
 
-    <!-- Schedule -->
+    <!-- Schedule
     <section id="schedule">
       <div class="schedule-container">
         <div class="schedule-title">
@@ -466,7 +504,7 @@ Thank you all for coming. <br> See you at MasseyHacks X!
           <span>Tip: shift + scroll to scroll horizontally</span>
         </h5>
       </div>
-    </section>
+    </section> -->
 
     <!-- FAQ -->
     <div id="faq" class="anchack"></div>
@@ -551,7 +589,7 @@ Thank you all for coming. <br> See you at MasseyHacks X!
               data-bs-parent="#accordl"
             >
               <div class="accordion-body">
-                MasseyHacks IX will be in-person. Hackers will not have the
+                MasseyHacks X will be in-person. Hackers will not have the
                 option to participate fully virtually as we return to a more
                 traditional form of MasseyHacks. Unfortunately, we cannot
                 provide overnight accommodation at the MasseyHacks venue, so
@@ -927,8 +965,8 @@ Thank you all for coming. <br> See you at MasseyHacks X!
             >!
           </p>
           <p>
-            The MasseyHacks VIII transparency report is available
-            <a href="https://mh8.masseyhacks.ca/files/transparency-report.pdf"
+            The MasseyHacks IX transparency report is available
+            <a href="https://mh9.masseyhacks.ca/files/transparency-report.pdf"
               >here</a
             >.
           </p>
@@ -1078,7 +1116,7 @@ Thank you all for coming. <br> See you at MasseyHacks X!
       </div>
       <div class="glass-card rounded sponsor_prompt">
         <div>
-          Special thanks to <span style="font-weight: bold;">Alex Millerman</span>
+          <span style="color: var(--dark-color);">Special thanks to</span> <span style="font-weight: bold; color: var(--dark-color);">Alex Millerman</span>
         </div>
       </div>
       <!-- Partners -->
@@ -1100,12 +1138,12 @@ Thank you all for coming. <br> See you at MasseyHacks X!
       </section>
     </section>
     <!-- Footer -->
-    <footer id="footer">
+    <footer id="footer" class="foot">
       <div class="container my-0 px-5">
         <div class="row footer py-5 justify-content-between">
           <div class="col-lg-5 col-xxl-4 text-left" style="margin: auto 0">
             <h1 class="footer-title my-3" style="font-weight: 500">
-              MasseyHacks IX
+              MasseyHacks X
             </h1>
             <p class="footer-address">
               Vincent Massey Secondary School
@@ -1114,7 +1152,7 @@ Thank you all for coming. <br> See you at MasseyHacks X!
               <br />
             </p>
             <p class="copyright-text">
-              Copyright &copy; 2023 MasseyHacks
+              Copyright &copy; 2024 MasseyHacks
               <br />
               &lt;/&gt; made by the MasseyHacks Team with
               <i class="fas fa-mug-hot"></i>

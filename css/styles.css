@@ -4,6 +4,9 @@
   /* Colours */
   --dark-color: rgba(255,255,255,0.8);
   --bg-colour: #ffffff;
+  /* --dark-blue: rgba(4, 0, 65, 0.6); */
+  --dark-blue: rgba(75, 75, 203, 0.1);
+  /* --dark-blue: rgba(96, 8, 148, 0.638); */
   --nav-burger-width: clamp(2rem, 2.5rem, 3rem);
   /* --nav-burger-width: clamp(4rem, 4rem, 4rem); */
   --nav-burger-line-height: max(
@@ -12,6 +15,7 @@
   );
 
   scroll-behavior: auto;
+  --bg-img-padding-constant: var(--bg-row-height);
 }
 
 html,
@@ -103,6 +107,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 canvas {
   position: fixed;
       top: 0;
@@ -110,6 +115,7 @@ canvas {
       width: 100vw;
       height: 100vh;
       display: block;
+    z-index: -10000;
 }
 html {
   scroll-behavior: smooth !important;
@@ -136,7 +142,27 @@ body {
   background-size:cover;
   z-index:-2147483647;
 }
+#bg-shapes {
+  top: var(--hero-height);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
 
+  width: 100%;
+  height: calc(100% - 100vh);
+
+  z-index: 10000;
+}
+
+#bg-shapes > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  min-height: var(--bg-row-height);
+  max-height: var(--bg-row-height);
+}
 h1 {
   font-size: 3rem;
   color: var(--dark-color);
@@ -144,12 +170,13 @@ h1 {
 
 p {
   font-size: 1rem;
+  color: var(--dark-color);
 }
 
 .glass-card {
-  border-radius: 1rem;
+  border-radius: 1.5vh;
   /* background: rgba(255,255,255,0.25); */
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--dark-blue);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -158,6 +185,29 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+i{
+  color:var(--dark-color);
+}
+
+.content{
+  color: var(--dark-color)
+}
+
+.white-card{
+  border-radius: 1.5vh !important;
+  /* background: rgba(100, 0, 187, 0.523); */
+  /* background: rgba(182, 227, 255, 0.6); */
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.081);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 section {
   margin-bottom: 10rem;
   overflow: hidden;
