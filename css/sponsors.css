@@ -25,6 +25,10 @@
   vertical-align: middle;
 }
 
+.black-text{
+  color: black !important;
+}
+
 .sponsor_prompt {
   display: flex;
   flex-direction: column;
@@ -103,7 +107,9 @@
 }
 #about,
 #sponsors > .glass-card,
+#sponsors > .white-card,
 #partners > .glass-card,
+#partners > .white-card,
 #faq > .glass-card,
 #carousel {
   display: flex;
@@ -119,7 +125,9 @@
 @media screen and (min-width: 375px) {
   #about,
   #sponsors > .glass-card,
+  #sponsors > .white-card,
   #partners > .glass-card,
+  #partners > .white-card,
   #faq > .glass-card,
   #carousel {
     width: 90%;
@@ -132,7 +140,9 @@
 @media only screen and (min-width: 768px) {
   #about,
   #sponsors > .glass-card,
+  #sponsors > .white-card,
   #partners > .glass-card,
+  #partners > .white-card,
   #faq > .glass-card,
   #carousel {
     width: 80%;
@@ -141,7 +151,9 @@
 
 @media only screen and (min-width: 1200px) {
   #sponsors > .glass-card,
+  #sponsors > .white-card,
   #partners > .glass-card,
+  #partners > .white-card,
   #faq > .glass-card,
   #carousel {
     width: 60%;
