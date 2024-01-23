@@ -1,6 +1,8 @@
 .unstyled-list {
   list-style: none;
   margin-left: 0;
+  background: rgba(39, 39, 105, 0.95);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding-left: 0;
 }
 
@@ -47,6 +49,8 @@ nav {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   transition:border-radius .2s;
+  background: rgba(39, 39, 105, 0.95);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .nav-burger > div {
