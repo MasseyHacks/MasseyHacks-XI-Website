@@ -1,7 +1,6 @@
 .unstyled-list {
   list-style: none;
   margin-left: 0;
-  background: rgba(39, 39, 105);
   padding-left: 0;
 }
 
@@ -48,7 +47,6 @@ nav {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   transition:border-radius .2s;
-  background: rgba(39, 39, 105);
 }
 
 .nav-burger > div {
@@ -129,5 +127,11 @@ nav {
 @media screen and (max-width: 470px) {
   .nav-active {
     opacity: 1;
+  }
+  .unstyled-list {
+    background: rgba(39, 39, 105);
+  }
+  .nav-burger {
+    background: rgba(39, 39, 105);
   }
 }
