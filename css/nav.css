@@ -6,9 +6,14 @@
 
 .nav-links > li > a {
   text-decoration: none;
-  color: rgb(27, 8, 56);
+  color: #D8CFE2; 
   font-size: clamp(1.4rem, 2.5vw, 1.5rem);
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links > li > a:hover {
+  color: #38D2FC;
 }
 
 nav {
@@ -18,9 +23,6 @@ nav {
   left: 2rem;
   top: 2rem;
   z-index: 1000;
-
-  /* border-radius: 5%; */
-
   padding: 0.3rem;
   transition: background-color 500ms;
   opacity: 0.8;
@@ -34,16 +36,13 @@ nav {
 }
 
 .nav-active {
-  /* border-radius: 3%; */
   opacity: 0.8;
 }
 
-/* NAV BURGER ICON */
 .nav-burger {
   display: block;
   cursor: pointer;
   padding: 0.5rem 0.8rem;
-
   border-radius: 1rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -51,8 +50,7 @@ nav {
 }
 
 .nav-burger > div {
-  background-color:rgb(245, 2, 208) ;
-
+  background-color:#D8CFE2; 
   width: var(--nav-burger-width);
   height: var(--nav-burger-line-height);
   margin: calc(
@@ -62,30 +60,31 @@ nav {
         ) / 2
     )
     0;
-  /* border-radius: 0.3rem; */
-}
-.nav-burger > div:nth-child(1) {
-  transform-origin: left;
-  transition-property: transform, background-color, box-shadow;
-  transition-duration: 500ms;
 }
 
-.nav-burger > div:nth-child(2) {
-  transform-origin: left;
-  transition-property: transform, background-color, box-shadow;
-  transition-duration: 500ms;
-}
-
+.nav-burger > div:nth-child(1),
+.nav-burger > div:nth-child(2),
 .nav-burger > div:nth-child(3) {
   transform-origin: left;
   transition-property: transform, background-color, box-shadow;
   transition-duration: 500ms;
 }
 
-/* x button */
+.nav-burger > div:nth-child(1) {
+  transform-origin: left;
+}
+
+.nav-burger > div:nth-child(2) {
+  transform-origin: left;
+}
+
+.nav-burger > div:nth-child(3) {
+  transform-origin: left;
+}
+
 .nav-burger-active > div:nth-child(1) {
   transform: rotate(45deg);
-  background-color: rgb(245, 2, 208) ;
+  background-color: rgb(245, 2, 208);
 }
 
 .nav-burger-active > div:nth-child(2) {
@@ -96,27 +95,21 @@ nav {
 
 .nav-burger-active > div:nth-child(3) {
   transform: rotate(-45deg);
-  background-color: rgb(245, 2, 208) ;
+  background-color: rgb(245, 2, 208);
 }
 
 .nav-links {
   display: flex;
-  /*align-items: end;*/
   flex-direction: column;
-
   max-width: 0;
   max-height: 0;
-
   transform: scale(0, 0);
   transform-origin: 1rem 0;
-
   margin: auto 0;
   padding: 0.5rem;
-
   transition-property: max-width, max-height, transform;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
-
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
