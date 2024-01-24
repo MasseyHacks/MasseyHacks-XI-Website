@@ -23,6 +23,7 @@
 }
 
 [data-termynal]:before {
+  box-shadow: 0px 0px 30px #BB00FF;
   content: "";
   position: absolute;
   top: 15px;
