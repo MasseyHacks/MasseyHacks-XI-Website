@@ -2,7 +2,7 @@
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  background: rgba(75, 75, 203, 0.2);
+  background: var(--dark-blue);
 }
 
 .nav-links > li > a {
@@ -47,7 +47,7 @@ nav {
   border-top-right-radius: 1rem;
   transition:border-radius .2s;
   
-  background: rgba(75, 75, 203, 0.2);
+  background: var(--dark-blue);
 }
 .nav-burger > div {
   background-color:#D8CFE2; 
@@ -126,9 +126,9 @@ nav {
 
 .nav-active{
   .unstyled-list {
-    background: rgba(40, 36, 127, 0.8);
+    backdrop-filter: blur(5px);
   }
   .nav-burger {
-    background: rgba(40, 36, 127, 0.8);
+    backdrop-filter: blur(5px);
   }
 }
