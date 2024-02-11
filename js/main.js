@@ -92,3 +92,11 @@ observer_cap.observe(document.querySelector("#cap"));
 
 
 
+// Set the cookie
+document.cookie = "hihihihihihi=cookie_value";
+
+// Retrieve the cookie value
+var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)hihihihihihi\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+// Output the cookie value (optional)
+console.log(cookieValue);
