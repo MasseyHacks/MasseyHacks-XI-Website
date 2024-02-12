@@ -2,7 +2,7 @@
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  background: rgba(75, 75, 203, 0.2);
+  background: rgba(75, 75, 203, 0.2); 
 }
 
 .nav-links > li > a {
@@ -46,7 +46,6 @@ nav {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   transition:border-radius .2s;
-  
   background: rgba(75, 75, 203, 0.2);
 }
 .nav-burger > div {

@@ -90,5 +90,3 @@ const observer_cap = new IntersectionObserver((entries) => {
 });
 observer_cap.observe(document.querySelector("#cap"));
 
-
-
