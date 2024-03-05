@@ -5,7 +5,7 @@
   --dark-color: rgba(255,255,255,0.8);
   --bg-colour: #0a0f35;
   --dark-blue: rgba(75, 75, 203, 0.1);
-  --purple: rgba(150, 46, 205, 0.6);
+  --purple: rgba(144, 0, 255, 0.5);
   --nav-burger-width: clamp(2rem, 2.5rem, 3rem);
   /* --nav-burger-width: clamp(4rem, 4rem, 4rem); */
   --nav-burger-line-height: max(
