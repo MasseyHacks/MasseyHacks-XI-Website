@@ -1,5 +1,5 @@
 .hero-logo {
-  width: 28rem !important;
+  width: 18rem !important;
 }
 
 #home {
@@ -39,6 +39,8 @@
   font-weight: 700;
   display: inline-block;
   text-align: center;
+  border: 1px solid white;
+  box-shadow: 0 0 9px 5px #BB00FF, inset 0 0 9px 5px  #BB00FF;
 }
 #application-div:hover {
   background-color: var(--dark-blue) !important;
