@@ -31,7 +31,7 @@
 }
 
 #application-div {
-  background-color: var(--dark-color);
+  background-color: var(--purple);
   text-decoration: none;
   padding: 0.6em 1.5em;
   color: white;
@@ -41,7 +41,7 @@
   text-align: center;
 }
 #application-div:hover {
-  background-color: var(--dark-color) !important;
+  background-color: var(--dark-blue) !important;
   color: white !important;
 }
 @keyframes appexpand {
@@ -97,7 +97,7 @@
   color: unset;
   width: 33.3333%;
   height: 100%;
-  background-color: var(--dark-color);
+  background-color: var(--purple);
   color: #fff;
   padding: 0.6em 0;
   transition: color 0.3s, background-color 0.3s;
@@ -112,7 +112,7 @@
   }
 }
 #application-links a:hover {
-  background-color: #fff !important;
+  background-color: var(--dark-blue) !important;
   color: var(--dark-color) !important;
 }
 #application-links a:first-child {
@@ -129,14 +129,13 @@
 }
 
 .btn:hover {
-  background-color: var(--bg-colour) !important;
-  color: var(--dark-color) !important;
+  background-color: var(--dark-blue) !important;
+  color: var(--dark-blue) !important;
 }
 
 .countdown-border {
-  border: solid;
-  /* border-color: white; */
-  color: var(--dark-color) !important;
+  box-shadow: 0px 0px 4px  #BB00FF;
+  color: var(--dark-blue) !important;
   border-radius: 1rem;
   width: 100%;
   display: flex;
@@ -180,6 +179,7 @@
 }
 /* @media screen and (min-width: 375px) { */
 .btn {
+  margin: 5%;
   max-width: 50%;
 }
 .hero-logo {
