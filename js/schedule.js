@@ -207,47 +207,7 @@ class TimeLineGrid {
 }
 
 const initTimeLine = (timeLine) => {
-  timeLine.setTimeCell(
-    2,
-    9,
-    0,
-    1,
-    "Soldering",
-    "5:00PM - 6:00PM | Cafeteria",
-    "#ABFF80",
-    "Join IEEE Windsor for a hands-on soldering workshop designed to take your electronics skills to the next level! Our instructors will guide you through the process and basic techniques of soldering through-hole electrical components. You'll learn how to identify components and read PCB layouts, use soldering tools. By the end of the workshop, you'll have a board of your own to take home!"
-  );
-  timeLine.setTimeCell(
-    1,
-    9,
-    0,
-    1,
-    "GitHub",
-    "5:00PM - 6:00PM | Room 101",
-    "#ABFF80",
-    "GitHub is also a great tool to learn for anyone looking to work on their own personal projects and make sure they're not lost somewhere in the depths of their computer, and instead are easily accessible on the go, whenever and wherever they need it."
-  );
-  timeLine.setTimeCell(
-    1,
-    11,
-    0.5,
-    0.5,
-    "Careers in Tech",
-    "7:30PM - 8:00PM | Cafeteria",
-    "#ABFF80",
-    "What does working in the technology industry look like? Explore different career paths and journeys through this workshop and AMA from two Massey alumni!"
-  );
-
-  timeLine.setTimeCell(
-    1,
-    12,
-    0,
-    1,
-    "Docker",
-    "8:00PM - 9:00PM | Room 101",
-    "#ABFF80",
-    "In this interactive session, you'll gain a solid understanding of Docker's basic concepts. You'll learn how to create, run, and manage Docker containers, as well as how to use Docker to build and deploy applications in a variety of environments. By the end of the workshop, you'll have the confidence to start using Docker on your own, and you'll be well on your way to unlocking the power of containerization for your development and deployment workflows."
-  );
+  
   timeLine.setTimeCell(
     4,
     3,
@@ -255,27 +215,27 @@ const initTimeLine = (timeLine) => {
     24,
     "Hacking Period",
     "11:00AM - 11:00AM | ",
-    "#a8d4ff",
+    "#868afc",
     ""
   );
   timeLine.setTimeCell(
-    1,
-    7,
+    2,
+    11,
     0.5,
     1,
     "Cupstacking",
-    "3:30PM - 4:30PM | Cafeteria",
-    "#E1BDFF",
+    "7:30PM - 8:30PM | Cafeteria",
+    "#9EF1EB",
     "A MasseyHacks favourite is back in the game! Reach for the stars by creating the tallest possible cup tower!"
   );
   timeLine.setTimeCell(
     2,
-    13,
+    14,
     0,
     1,
     "Karaoke",
-    "9:00PM - 10:00PM | Cafeteria",
-    "#E1BDFF",
+    "10:00PM - 11:00PM | Cafeteria",
+    "#9EF1EB",
     "Ignore all your stage fright, pick up the mic and sing to your heart's content. Have fun!"
   );
   timeLine.setTimeCell(
@@ -283,41 +243,41 @@ const initTimeLine = (timeLine) => {
     15,
     0.5,
     1,
-    "Skribbl.io",
-    "11:30PM - 12:30AM | Online",
-    "#E1BDFF",
-    ""
-  );
-  timeLine.setTimeCell(
-    2,
-    17,
-    0,
-    1,
     "Minecraft Bedwars",
-    "1:00AM - 2:00AM | Online",
-    "#E1BDFF",
+    "12:00AM - 1:00AM | Online",
+    "#9EF1EB",
     ""
   );
-  timeLine.setTimeCell(
-    2,
-    26,
-    0,
-    1.5,
-    "Therapy Dogs",
-    "10:00AM - 11:30AM | Room 101",
-    "#E1BDFF",
-    ""
-  );
-  timeLine.setTimeCell(
-    2,
-    32,
-    0,
-    0.5,
-    "Trivia",
-    "4:00PM - 4:30PM | Cafeteria",
-    "#E1BDFF",
-    "Nothing to do while waiting for closing ceremonies? Come relax with some MasseyHacks trivia and some snacks to spend the time!"
-  );
+  // timeLine.setTimeCell(
+  //   2,
+  //   17,
+  //   0,
+  //   1,
+  //   "Minecraft Bedwars",
+  //   "1:30AM - 2:00AM | Online",
+  //   "#9EF1EB",
+  //   ""
+  // );
+  // timeLine.setTimeCell(
+  //   2,
+  //   26,
+  //   0,
+  //   1.5,
+  //   "Therapy Dogs",
+  //   "10:00AM - 11:30AM | Room 101",
+  //   "#E1BDFF",
+  //   ""
+  // );
+  // timeLine.setTimeCell(
+  //   2,
+  //   32,
+  //   0,
+  //   0.5,
+  //   "Trivia",
+  //   "4:00PM - 4:30PM | Cafeteria",
+  //   "#E1BDFF",
+  //   "Nothing to do while waiting for closing ceremonies? Come relax with some MasseyHacks trivia and some snacks to spend the time!"
+  // );
   timeLine.setTimeCell(
     1,
     1,
@@ -342,10 +302,10 @@ const initTimeLine = (timeLine) => {
   timeLine.setTimeCell(
     1,
     14,
-    0,
+    0.5,
     0.5,
     "Check-Out",
-    "10:00PM - 10:30PM | Front Desk",
+    "10:30PM - 11:00PM | Front Desk",
     "#FFC3C3",
     ""
   );
@@ -388,67 +348,95 @@ const initTimeLine = (timeLine) => {
     1.25,
     "Breakfast Snacks",
     "9:00AM - 10:15AM | Cafeteria",
-    "#FFA4D5",
+    "#D8BBFF",
     ""
   );
   timeLine.setTimeCell(
     2,
-    5,
-    0,
+    4,
+    0.5,
     1.25,
     "Lunch",
-    "1:00PM - 2:15PM | Cafeteria",
-    "#FFA4D5",
+    "12:30PM - 1:30PM | Cafeteria",
+    "#D8BBFF",
     ""
   );
   timeLine.setTimeCell(
     1,
     3,
-    0.75,
+    0.125,
     1,
-    "Intro to Python I",
-    "11:45AM - 12:45PM | Room 149",
-    "#ABFF80",
-    'Introduction to Python I is an introduction to programming and, by extension, how to think like a programmer. The inspiration for this workshop is the educational programming language Logo. Logo derives from the Greek logos, meaning word or thought. This language has been implemented and embraced by dozens of institutions from Apple to MIT since it\'s creation in 1967. Most people think of Logo as "that language where you draw lines with a turtle." In the Introduction to Python I workshop we will be using the turtle module to introduce the fundamental programming concepts of variables, sequence, selection and repetition.'
-  );
+    "Intro Workshop I",
+    "11:15AM - 12:15PM | Room 149",
+    "#a8d4ff",
+    "");
   timeLine.setTimeCell(
     2,
     3,
-    0.75,
+    0.125,
     1,
-    "Flask",
-    "11:45AM - 12:45PM | Room 101",
-    "#ABFF80",
-    "Looking to explore the exciting world of web development? Join us for our Intro to Flask workshop! Flask is a popular backend web framework that allows developers to quickly build web applications using Python. In this workshop, you'll learn how to create a basic Flask application, handle user input, and display data from a database. Flask is a great gateway into backend web development, making this workshop perfect for beginners who are interested in exploring this field. Don't miss out on the chance to jumpstart your web development skills with Flask!"
-  );
+    "Intermediate Workshop",
+    "11:15AM - 12:15PM | Room TBD",
+    "#a8d4ff",
+    "");
   timeLine.setTimeCell(
     1,
     6,
     0.5,
     1,
-    "Intro to Python II",
+    "Intro Workshop II",
     "2:30PM - 3:30PM | Room 149",
-    "#ABFF80",
-    "Introduction to Python II builds on the foundation of knowledge established in Introduction to Python I. The focus of the workshop will be on building the skills required to develop a simple game using pygame. We will set up a simple pygame template, explore basic drawing commands then focus on user interaction. We will develop the game of Pong and discuss how to approach a few other projects that are realistic to produce in a short period of time with minimal programming experience."
-  );
-  timeLine.setTimeCell(
-    2,
-    6,
-    0.5,
-    1,
-    "Intro to Unity",
-    "2:30PM - 3:30PM | Room 101",
-    "#ABFF80",
-    ""
-  );
+    "#a8d4ff",
+    "");
+
+    timeLine.setTimeCell(
+      1,
+      8,
+      0,
+      1,
+      "Connecting to Windsor's Tech Scene",
+      "4:00PM - 5:00PM | Room TBD",
+      "#a8d4ff",
+      "");
+
+      timeLine.setTimeCell(
+        2,
+        8,
+        0,
+        1,
+        "Defang Workshop",
+        "4:00PM - 5:00PM | Room TBD",
+        "#a8d4ff",
+        "");
+
+        timeLine.setTimeCell(
+          2,
+          9,
+          0.125,
+          1,
+          "Careers in Tech",
+          "5:15PM - 6:00PM | Room TBD",
+          "#a8d4ff",
+          "");
+
+          timeLine.setTimeCell(
+            2,
+            12,
+            0.875,
+            1,
+            "Intro to CS (NOT programming)",
+            "8:45PM - 9:45PM | Room TBD",
+            "#a8d4ff",
+            "");
+ 
   timeLine.setTimeCell(
     2,
     10,
-    0.25,
-    1.25,
+    0,
+    1,
     "Dinner",
-    "6:15PM - 7:30PM | Cafeteria",
-    "#FFA4D5",
+    "6:00PM - 7:00PM | Cafeteria",
+    "#D8BBFF",
     ""
   );
 
@@ -457,9 +445,9 @@ const initTimeLine = (timeLine) => {
     24,
     0.5,
     1,
-    "Pancake Breakfast",
+    "Breakfast",
     "8:30AM - 9:30AM | Cafeteria",
-    "#FFA4D5",
+    "#D8BBFF",
     ""
   );
 
@@ -470,7 +458,7 @@ const initTimeLine = (timeLine) => {
     1.5,
     "Lunch",
     "12:30PM - 2:00PM | Cafeteria",
-    "#FFA4D5",
+    "#D8BBFF",
     ""
   );
 
@@ -481,9 +469,30 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Team Formation",
     "11:00AM - 11:30AM | North Gym",
-    "#E1BDFF",
+    "#FECCFF",
     "Unsure who to work with or interested in making some new friends? Find your perfect partners and join up to create the project of your dreams!"
   );
+
+  timeLine.setTimeCell(
+    3,
+    3,
+    0,
+    0.5,
+    "Team Formation",
+    "11:00AM - 11:30AM | North Gym",
+    "#9FAFFF",
+    "Unsure who to work with or interested in making some new friends? Find your perfect partners and join up to create the project of your dreams!"
+  );
+
+  timeLine.setTimeCell(
+    3,
+    6,
+    0,
+    1.5,
+    "Innovation Fair",
+    "2:00PM - 3:30PM | Cafeteria",
+    "#9FAFFF",
+    "");
   timeLine.setTimeCell(
     3,
     10,
