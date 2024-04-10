@@ -77,16 +77,16 @@ class TimeLineGrid {
     textSection.className = "timeline-text-section";
 
     const titleNode = document.createElement("h5");
-    titleNode.style.color = "#434667";
+    titleNode.style.color = "#eae3ed";
     titleNode.innerHTML = title;
 
     const descriptionNode = document.createElement("p");
     const [a, b] = description.split(" | ");
     descriptionNode.innerHTML = a;
-    descriptionNode.style.color = "#434667";
+    descriptionNode.style.color = "#eae3ed";
     const descriptionNode2 = document.createElement("p");
     descriptionNode2.innerHTML = b;
-    descriptionNode2.style.color = "#434667";
+    descriptionNode2.style.color = "#eae3ed";
 
     const infoNode = document.createElement("span");
     infoNode.id = "myPopup";
@@ -215,7 +215,8 @@ const initTimeLine = (timeLine) => {
     24,
     "Hacking Period",
     "11:00AM - 11:00AM | ",
-    "#868afc",
+    "#AC4AAA",
+    //"#868afc",
     ""
   );
   timeLine.setTimeCell(
@@ -225,7 +226,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Cupstacking",
     "7:30PM - 8:30PM | Cafeteria",
-    "#9EF1EB",
+    "#C053A8",
     "A MasseyHacks favourite is back in the game! Reach for the stars by creating the tallest possible cup tower!"
   );
   timeLine.setTimeCell(
@@ -235,7 +236,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Karaoke",
     "10:00PM - 11:00PM | Cafeteria",
-    "#9EF1EB",
+    "#C053A8",
     "Ignore all your stage fright, pick up the mic and sing to your heart's content. Have fun!"
   );
   timeLine.setTimeCell(
@@ -245,7 +246,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Minecraft Bedwars",
     "12:00AM - 1:00AM | Online",
-    "#9EF1EB",
+    "#C053A8",
     ""
   );
   // timeLine.setTimeCell(
@@ -285,7 +286,8 @@ const initTimeLine = (timeLine) => {
     1,
     "Check-In",
     "9:00AM - 10:00AM | Front Desk",
-    "#FFC3C3",
+    "#2B29A0",
+    //"#25137B",
     ""
   );
   timeLine.setTimeCell(
@@ -295,7 +297,8 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Opening Ceremony",
     "10:30AM - 11:00AM | North Gym",
-    "#9EF1EB",
+    "#6432AA",
+    //"#9EF1EB",
     ""
   );
 
@@ -306,7 +309,8 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Check-Out",
     "10:30PM - 11:00PM | Front Desk",
-    "#FFC3C3",
+    "#2B29A0",
+    //"#FFC3C3",
     ""
   );
   timeLine.setTimeCell(
@@ -316,7 +320,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Check-Out",
     "5:00PM - 5:30PM | Front Desk",
-    "#FFC3C3",
+    "#2B29A0",
     ""
   );
   timeLine.setTimeCell(
@@ -326,7 +330,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Check-In",
     "8:00AM - 9:00AM | Front Desk",
-    "#FFC3C3",
+    "#2B29A0",
     ""
   );
 
@@ -337,7 +341,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Closing Ceremony",
     "4:30PM - 5:00PM | North Gym",
-    "#9EF1EB",
+    "#6432AA",
     ""
   );
 
@@ -348,7 +352,8 @@ const initTimeLine = (timeLine) => {
     1.25,
     "Breakfast Snacks",
     "9:00AM - 10:15AM | Cafeteria",
-    "#D8BBFF",
+    "#4B2EA5",
+    //"#D8BBFF",
     ""
   );
   timeLine.setTimeCell(
@@ -358,7 +363,8 @@ const initTimeLine = (timeLine) => {
     1.25,
     "Lunch",
     "12:30PM - 1:30PM | Cafeteria",
-    "#D8BBFF",
+    "#4B2EA5",
+    //"#D8BBFF",
     ""
   );
   timeLine.setTimeCell(
@@ -368,7 +374,8 @@ const initTimeLine = (timeLine) => {
     1,
     "Intro Workshop I",
     "11:15AM - 12:15PM | Room 149",
-    "#a8d4ff",
+    "#7E37AF",
+    //"#a8d4ff",
     "");
   timeLine.setTimeCell(
     2,
@@ -377,7 +384,8 @@ const initTimeLine = (timeLine) => {
     1,
     "Intermediate Workshop",
     "11:15AM - 12:15PM | Room TBD",
-    "#a8d4ff",
+    "#7E37AF",
+    //"#a8d4ff",
     "");
   timeLine.setTimeCell(
     1,
@@ -386,7 +394,8 @@ const initTimeLine = (timeLine) => {
     1,
     "Intro Workshop II",
     "2:30PM - 3:30PM | Room 149",
-    "#a8d4ff",
+    "#7E37AF",
+    //"#a8d4ff",
     "");
 
     timeLine.setTimeCell(
@@ -396,7 +405,7 @@ const initTimeLine = (timeLine) => {
       1,
       "Connecting to Windsor's Tech Scene",
       "4:00PM - 5:00PM | Room TBD",
-      "#a8d4ff",
+      "#7E37AF",
       "");
 
       timeLine.setTimeCell(
@@ -406,7 +415,7 @@ const initTimeLine = (timeLine) => {
         1,
         "Defang Workshop",
         "4:00PM - 5:00PM | Room TBD",
-        "#a8d4ff",
+        "#7E37AF",
         "");
 
         timeLine.setTimeCell(
@@ -416,7 +425,7 @@ const initTimeLine = (timeLine) => {
           1,
           "Careers in Tech",
           "5:15PM - 6:00PM | Room TBD",
-          "#a8d4ff",
+          "#7E37AF",
           "");
 
           timeLine.setTimeCell(
@@ -426,7 +435,7 @@ const initTimeLine = (timeLine) => {
             1,
             "Intro to CS (NOT programming)",
             "8:45PM - 9:45PM | Room TBD",
-            "#a8d4ff",
+            "#7E37AF",
             "");
  
   timeLine.setTimeCell(
@@ -436,7 +445,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Dinner",
     "6:00PM - 7:00PM | Cafeteria",
-    "#D8BBFF",
+    "#4B2EA5",
     ""
   );
 
@@ -447,7 +456,8 @@ const initTimeLine = (timeLine) => {
     1,
     "Breakfast",
     "8:30AM - 9:30AM | Cafeteria",
-    "#D8BBFF",
+    "#4B2EA5",
+    //"#D8BBFF",
     ""
   );
 
@@ -458,7 +468,8 @@ const initTimeLine = (timeLine) => {
     1.5,
     "Lunch",
     "12:30PM - 2:00PM | Cafeteria",
-    "#D8BBFF",
+    "#4B2EA5",
+    //"#D8BBFF",
     ""
   );
 
@@ -469,7 +480,8 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Team Formation",
     "11:00AM - 11:30AM | North Gym",
-    "#FECCFF",
+    "#9541AC",
+    //"#FECCFF",
     "Unsure who to work with or interested in making some new friends? Find your perfect partners and join up to create the project of your dreams!"
   );
 
@@ -480,7 +492,8 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Team Formation",
     "11:00AM - 11:30AM | North Gym",
-    "#9FAFFF",
+    "#A246AB",
+    //"#FECCFF",
     "Unsure who to work with or interested in making some new friends? Find your perfect partners and join up to create the project of your dreams!"
   );
 
@@ -491,7 +504,7 @@ const initTimeLine = (timeLine) => {
     1.5,
     "Innovation Fair",
     "2:00PM - 3:30PM | Cafeteria",
-    "#9FAFFF",
+    "#9541AC",
     "");
   timeLine.setTimeCell(
     3,
@@ -500,7 +513,7 @@ const initTimeLine = (timeLine) => {
     18,
     "Hackenger Hunt",
     "6:00PM - 12:00PM | Online",
-    "#9BA3FF",
+    "#9541AC",
     "Put your puzzle-solving skills to the test with the Hackenger Hunt! In this event, you'll be given 15 creative tech-related challenges to solve, ranging from easy to difficult. Top scorers will receive stickers, limited-edition swag, and/or a gift card!"
   );
 
@@ -511,7 +524,7 @@ const initTimeLine = (timeLine) => {
     2,
     "Judging",
     "2:00PM - 4:00PM | Cafeteria",
-    "#9EF1EB",
+    "#AC4AAA",
     ""
   );
 };
