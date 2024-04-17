@@ -217,7 +217,7 @@ const initTimeLine = (timeLine) => {
     "11:00AM - 11:00AM | ",
     "#AC4AAA",
     //"#868afc",
-    ""
+    "Let the coding begin! Create a project. Good luck."
   );
   timeLine.setTimeCell(
     2,
@@ -227,7 +227,7 @@ const initTimeLine = (timeLine) => {
     "Cupstacking",
     "7:30PM - 8:30PM | Cafeteria",
     "#C053A8",
-    "A MasseyHacks favourite is back in the game! Reach for the stars by creating the tallest possible cup tower!"
+    "A MasseyHacks favourite is back in the game! Reach for the stars by creating the tallest possible cup tower... with a twist!"
   );
   timeLine.setTimeCell(
     2,
@@ -241,13 +241,13 @@ const initTimeLine = (timeLine) => {
   );
   timeLine.setTimeCell(
     2,
-    15,
-    0.5,
+    16,
+    0,
     1,
     "Minecraft Bedwars",
     "12:00AM - 1:00AM | Online",
     "#C053A8",
-    ""
+    "Midnight Minecraft (Java edition) :D"
   );
   // timeLine.setTimeCell(
   //   2,
@@ -259,16 +259,16 @@ const initTimeLine = (timeLine) => {
   //   "#9EF1EB",
   //   ""
   // );
-  // timeLine.setTimeCell(
-  //   2,
-  //   26,
-  //   0,
-  //   1.5,
-  //   "Therapy Dogs",
-  //   "10:00AM - 11:30AM | Room 101",
-  //   "#E1BDFF",
-  //   ""
-  // );
+  timeLine.setTimeCell(
+    2,
+    27,
+    0,
+    1,
+    "Therapy Dogs",
+    "11:00AM - 12:00PM | Room TBD",
+    "#C053A8",
+    ""
+  );
   // timeLine.setTimeCell(
   //   2,
   //   32,
@@ -288,7 +288,7 @@ const initTimeLine = (timeLine) => {
     "9:00AM - 10:00AM | Front Desk",
     "#2B29A0",
     //"#25137B",
-    ""
+    "Get ready to kick off an amazing start to MasseyHacksX! Get swag, stickers and super cool stuff all for FREE. Remember to bring your ID."
   );
   timeLine.setTimeCell(
     1,
@@ -299,7 +299,7 @@ const initTimeLine = (timeLine) => {
     "10:30AM - 11:00AM | North Gym",
     "#6432AA",
     //"#9EF1EB",
-    ""
+    "Official launch to the event: acknowledgements, information, and more."
   );
 
   timeLine.setTimeCell(
@@ -311,7 +311,7 @@ const initTimeLine = (timeLine) => {
     "10:30PM - 11:00PM | Front Desk",
     "#2B29A0",
     //"#FFC3C3",
-    ""
+    "Go home. Time to work on your projects or perhaps get some sleep."
   );
   timeLine.setTimeCell(
     2,
@@ -321,7 +321,7 @@ const initTimeLine = (timeLine) => {
     "Check-Out",
     "5:00PM - 5:30PM | Front Desk",
     "#2B29A0",
-    ""
+    "End of MasseyHacks. Thanks for participating!"
   );
   timeLine.setTimeCell(
     1,
@@ -331,7 +331,7 @@ const initTimeLine = (timeLine) => {
     "Check-In",
     "8:00AM - 9:00AM | Front Desk",
     "#2B29A0",
-    ""
+    "Start the final day of MasseyHacks. ID!"
   );
 
   timeLine.setTimeCell(
@@ -342,7 +342,7 @@ const initTimeLine = (timeLine) => {
     "Closing Ceremony",
     "4:30PM - 5:00PM | North Gym",
     "#6432AA",
-    ""
+    "Closing remarks, awards ceremonies and more."
   );
 
   timeLine.setTimeCell(
@@ -354,7 +354,7 @@ const initTimeLine = (timeLine) => {
     "9:00AM - 10:15AM | Cafeteria",
     "#4B2EA5",
     //"#D8BBFF",
-    ""
+    "Fuel up with breakfast snacks before the event starts!"
   );
   timeLine.setTimeCell(
     2,
@@ -365,7 +365,7 @@ const initTimeLine = (timeLine) => {
     "12:30PM - 1:30PM | Cafeteria",
     "#4B2EA5",
     //"#D8BBFF",
-    ""
+    "FOOOD"
   );
   timeLine.setTimeCell(
     1,
@@ -403,10 +403,10 @@ const initTimeLine = (timeLine) => {
       8,
       0,
       1,
-      "Connecting to Windsor's Tech Scene",
+      "Get Plugged into Windsor-Essex's Tech Scene",
       "4:00PM - 5:00PM | Room TBD",
       "#7E37AF",
-      "");
+      "Join us for the &quot;Getting Plugged into the Windsor Essex Tech Scene&quot; workshop! We&#39;ll explore local entrepreneurship resources, brainstorm ways to enhance tech programming and discover networking opportunities within our city&#39;s tech community. This workshop will help you uncover the power of Windsor Essex&#39;s tech ecosystem!");
 
       timeLine.setTimeCell(
         2,
@@ -426,7 +426,7 @@ const initTimeLine = (timeLine) => {
           "Careers in Tech",
           "5:15PM - 6:00PM | Room TBD",
           "#7E37AF",
-          "");
+          "Want to know what it takes to work in software development? From an Amazon Software Engineer?! After a development process introduction by Rocket Innovation Studios, the workshop will be an open forum for students to ask panelists about their experiences through education, internships, starting their career, and working in the software industry.");
 
           timeLine.setTimeCell(
             2,
@@ -436,7 +436,7 @@ const initTimeLine = (timeLine) => {
             "Intro to CS (NOT programming)",
             "8:45PM - 9:45PM | Room TBD",
             "#7E37AF",
-            "");
+            "Do you know the difference between Computer Science and Software Engineering? Gordon Lin, a current Waterloo CS student, is here to explain it!");
  
   timeLine.setTimeCell(
     2,
@@ -446,7 +446,7 @@ const initTimeLine = (timeLine) => {
     "Dinner",
     "6:00PM - 7:00PM | Cafeteria",
     "#4B2EA5",
-    ""
+    "MORE FOOOD"
   );
 
   timeLine.setTimeCell(
@@ -458,7 +458,7 @@ const initTimeLine = (timeLine) => {
     "8:30AM - 9:30AM | Cafeteria",
     "#4B2EA5",
     //"#D8BBFF",
-    ""
+    "Pancake breakfast????"
   );
 
   timeLine.setTimeCell(
@@ -470,7 +470,7 @@ const initTimeLine = (timeLine) => {
     "12:30PM - 2:00PM | Cafeteria",
     "#4B2EA5",
     //"#D8BBFF",
-    ""
+    "Last meal before the end of MasseyHacks."
   );
 
   timeLine.setTimeCell(
@@ -505,7 +505,7 @@ const initTimeLine = (timeLine) => {
     "Innovation Fair",
     "2:00PM - 3:30PM | Cafeteria",
     "#9541AC",
-    "");
+    "Sponsors will be hosting booths in the cafeteria. Talk to them to learn more about their company and maybe even get some free swag!");
   timeLine.setTimeCell(
     3,
     10,
@@ -525,7 +525,7 @@ const initTimeLine = (timeLine) => {
     "Judging",
     "2:00PM - 4:00PM | Cafeteria",
     "#AC4AAA",
-    ""
+    "Get ready for presentations and displaying the project you worked hard on. Be proud of your accomplishments!"
   );
 };
 
