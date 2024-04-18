@@ -372,31 +372,31 @@ const initTimeLine = (timeLine) => {
     3,
     0.125,
     1,
-    "Intro Workshop I",
+    "Web Design Basics I",
     "11:15AM - 12:15PM | Room 149",
     "#7E37AF",
     //"#a8d4ff",
-    "");
+    "HTML, CSS and JavaScript are the foundation of the Web. This workshop will quickly explain the basic setup of the Web then equip participants with the tools to create simple web pages using HTML. Participants will learn HTML by working through practical exercises.");
   timeLine.setTimeCell(
     2,
     3,
     0.125,
     1,
-    "Intermediate Workshop",
+    "Making a Website with Sveltekit",
     "11:15AM - 12:15PM | Room TBD",
     "#7E37AF",
     //"#a8d4ff",
-    "");
+    "In this workshop, you'll learn how to quickly spin up a website with the help of the Sveltekit. Sveltekit is a set of tools that allow us to build highly reactive and responsive websites without the steep learning curve or bulky code that comes with some other frameworks.");
   timeLine.setTimeCell(
     1,
     6,
     0.5,
     1,
-    "Intro Workshop II",
+    "Web Design Basics II",
     "2:30PM - 3:30PM | Room 149",
     "#7E37AF",
     //"#a8d4ff",
-    "");
+    "The focus in this workshop is how to make websites more attractive by using CSS. Participants will learn the two fundamental parts of CSS, how to target only the elements you want and how to change them to look the way you want. JavaScript will be introduced in a very limited way.");
 
     timeLine.setTimeCell(
       1,

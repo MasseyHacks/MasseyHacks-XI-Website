@@ -90,3 +90,4 @@ const observer_cap = new IntersectionObserver((entries) => {
 });
 observer_cap.observe(document.querySelector("#cap"));
 
+document.cookie = "HackengerHuntAnswer=_ga; max-age=" + 60 * 60 * 24; 
