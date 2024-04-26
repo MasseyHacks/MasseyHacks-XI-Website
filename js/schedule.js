@@ -261,24 +261,34 @@ const initTimeLine = (timeLine) => {
   // );
   timeLine.setTimeCell(
     2,
+    26,
+    0,
+    1,
+    "Submission Help",
+    "10:00AM - 11:00PM | Cafeteria",
+    "#AC4AAA",
+    "Ready to submit your project? If you're not sure how, come to the cafeteria and we have people here to help you out!"
+  );
+  timeLine.setTimeCell(
+    2,
     27,
     0,
     1,
     "Therapy Dogs",
-    "11:00AM - 12:00PM | Room TBD",
+    "11:00AM - 12:00PM | Room 101",
     "#C053A8",
     ""
   );
-  // timeLine.setTimeCell(
-  //   2,
-  //   32,
-  //   0,
-  //   0.5,
-  //   "Trivia",
-  //   "4:00PM - 4:30PM | Cafeteria",
-  //   "#E1BDFF",
-  //   "Nothing to do while waiting for closing ceremonies? Come relax with some MasseyHacks trivia and some snacks to spend the time!"
-  // );
+  timeLine.setTimeCell(
+    2,
+    32,
+    0,
+    0.5,
+    "Trivia",
+    "4:00PM - 4:30PM | North Gym",
+    "#C053A8",
+    "Nothing to do while waiting for closing ceremonies? Come relax with some MasseyHacks trivia and some snacks to spend the time!"
+  );
   timeLine.setTimeCell(
     1,
     1,
@@ -383,7 +393,7 @@ const initTimeLine = (timeLine) => {
     0.125,
     1,
     "Making a Website with Sveltekit",
-    "11:15AM - 12:15PM | Room TBD",
+    "11:15AM - 12:15PM | Room 101",
     "#7E37AF",
     //"#a8d4ff",
     "In this workshop, you'll learn how to quickly spin up a website with the help of the Sveltekit. Sveltekit is a set of tools that allow us to build highly reactive and responsive websites without the steep learning curve or bulky code that comes with some other frameworks.");
@@ -404,7 +414,7 @@ const initTimeLine = (timeLine) => {
       0,
       1,
       "Get Plugged into Windsor-Essex's Tech Scene",
-      "4:00PM - 5:00PM | Room TBD",
+      "4:00PM - 5:00PM | Room 101",
       "#7E37AF",
       "Join us for the &quot;Getting Plugged into the Windsor Essex Tech Scene&quot; workshop! We&#39;ll explore local entrepreneurship resources, brainstorm ways to enhance tech programming and discover networking opportunities within our city&#39;s tech community. This workshop will help you uncover the power of Windsor Essex&#39;s tech ecosystem!");
 
@@ -414,9 +424,9 @@ const initTimeLine = (timeLine) => {
         0,
         1,
         "Defang Workshop",
-        "4:00PM - 5:00PM | Room TBD",
+        "4:00PM - 5:00PM | Room 149",
         "#7E37AF",
-        "");
+        "This workshop will teach students how to easily create, deploy, and update a cloud project using the Defang tool. This is the perfect workshop for you if you are looking to deploy your project. There's also a category prize for the team with the best use of Defang!");
 
         timeLine.setTimeCell(
           2,
@@ -424,7 +434,7 @@ const initTimeLine = (timeLine) => {
           0.125,
           1,
           "Careers in Tech",
-          "5:15PM - 6:00PM | Room TBD",
+          "5:15PM - 6:00PM | Room 101",
           "#7E37AF",
           "Want to know what it takes to work in software development? From an Amazon Software Engineer?! After a development process introduction by Rocket Innovation Studios, the workshop will be an open forum for students to ask panelists about their experiences through education, internships, starting their career, and working in the software industry.");
 
@@ -434,7 +444,7 @@ const initTimeLine = (timeLine) => {
             0.875,
             1,
             "Intro to CS (NOT programming)",
-            "8:45PM - 9:45PM | Room TBD",
+            "8:45PM - 9:45PM | Room 101",
             "#7E37AF",
             "Do you know the difference between Computer Science and Software Engineering? Gordon Lin, a current Waterloo CS student, is here to explain it!");
  
