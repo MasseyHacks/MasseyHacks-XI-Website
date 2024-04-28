@@ -519,10 +519,10 @@ const initTimeLine = (timeLine) => {
   timeLine.setTimeCell(
     3,
     10,
-    0,
+    0.5,
     18,
     "Hackenger Hunt",
-    "6:00PM - 12:00PM | Online",
+    "6:30PM - 12:00PM | Online",
     "#9541AC",
     "Put your puzzle-solving skills to the test with the Hackenger Hunt! In this event, you'll be given 15 creative tech-related challenges to solve, ranging from easy to difficult. Top scorers will receive stickers, limited-edition swag, and/or a gift card!"
   );
