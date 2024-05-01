@@ -185,10 +185,9 @@
   width: 500px;
   background-color: #9724da;
   color: var(--dark-color);
-
   border-radius: 10px;
   padding: 1em;
-  box-shadow: 0 0 50px darkgray;
+  box-shadow: 0 0 50px #9000ff;
   position: absolute;
   bottom: 0;
   z-index: 999999;
