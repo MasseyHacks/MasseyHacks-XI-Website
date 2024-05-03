@@ -370,7 +370,7 @@ const initTimeLine = (timeLine) => {
     2,
     4,
     0.5,
-    1.25,
+    1,
     "Lunch",
     "12:30PM - 1:30PM | Cafeteria",
     "#4B2EA5",
