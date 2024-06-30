@@ -247,5 +247,11 @@
   padding: 7px;
   color: white;
   font-weight: 600 !important;
-  background-color: var(--dark-color);
+  background-color: var(--purple);
+  
+  text-decoration: none;
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid white;
+  box-shadow: 0 0 8px 4px #9000ff, inset 0 0 8px 4px  #9000ff;
 }
