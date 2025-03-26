@@ -21,7 +21,7 @@ for (var x = 0; x < columns; x++) {
 }
 
 function randColor() {
-    var colors = ['rgba(121, 17, 246, 0.6)', 'rgba(221, 70, 215, 0.6)', 'rgba(9, 201, 209, 0.6)'];
+    var colors = ['#EEAF61', '#CE4993', '#EE5D6C'];
     return colors[Math.floor(Math.random() * colors.length)];
   }
 
@@ -58,10 +58,10 @@ function getRandomColor() {
 
 
 
-var backgroundImage = new Image();
-backgroundImage.src = 'assets/bg4.svg'; 
-function drawBG() {
-    ctx.drawImage(backgroundImage, 0, 0, c.width, c.height);
-}
+// var backgroundImage = new Image();
+// // backgroundImage.src = 'assets/bg4.svg'; 
+// function drawBG() {
+//     // ctx.drawImage(backgroundImage, 0, 0, c.width, c.height);
+// }
 
-// setInterval(drawBG, 3000);
+// // setInterval(drawBG, 3000);
