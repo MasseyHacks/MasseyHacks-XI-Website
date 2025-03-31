@@ -18,6 +18,7 @@
 }
 
 html,
+svg,
 body,
 div,
 span,
@@ -127,6 +128,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden !important;
+  overflow-y: visible;
   --bg-colour: #0a0f35;
 }
 
@@ -181,7 +183,7 @@ p {
   border-radius: 1.5vh;
   background: rgba(255,255,255,0.8);
   /* background: var(--dark-blue); */
-  box-shadow: 0px 0px 30px  #CE4993;
+  /* box-shadow: 0px 0px 30px  #CE4993; */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(0, 0, 0, 0.081);
@@ -194,7 +196,7 @@ p {
   border-radius: 1.5vh;
   /* background: rgba(255,255,255,0.25); */
   background: var(--dark-blue);
-  box-shadow: 0px 0px 30px  #CE4993;
+  /* box-shadow: 0px 0px 30px  #CE4993; */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 254, 254, 0.774);
@@ -204,16 +206,41 @@ p {
 }
 
 .introFlexBox{
-  /* border-radius: 1.5vh; */
+  border-radius: 1.5vh;
   /* background: rgba(255,255,255,0.25); */
+  /* background-image: url("/assets/YellowSpalt.png"); */
+  /* background-position: center; */
+  /* background-size: 150%; */
+  /* background-repeat: no-repeat; */
   /* background: var(--dark-blue); */
-  /* box-shadow: 0px 0px 30px  #6A0D83; */
+  /* box-shadow: 0px 0px 30px  #6A0D8x3; */
   /* backdrop-filter: blur(5px); */
   /* -webkit-backdrop-filter: blur(5px); */
-  /* border: 1px solid rgba(255, 254, 254, 0.774); */
+  
+  /* border: 1px solid rgb(230, 173, 255); */
   display: flex;
+  /* width: 100%; */
   align-items: center;
   justify-content: center;
+  /* overflow: visible !important; */
+
+}
+
+
+.introFlexBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* transform: rotate(180deg); */
+  transform: translateY(-1%) rotate(90deg);
+  background: url("/assets/YellowSpalt.png") center/cover no-repeat;
+  z-index: -1;
+  border-radius: 1.5vh;
+  background-size: contain; /* Fits inside the box without cropping */
+  /* background-size: cover;  Fills the box but may crop the image */
 }
 
 
@@ -223,6 +250,10 @@ i{
 
 .content{
   color: var(--dark-color)
+}
+
+.btn-row{
+  display: flex;
 }
 
 
@@ -262,7 +293,7 @@ a:not(.sponsor-obj, #application-links a,
 }
 .zoom{
   transform: scale(1);
-  transition: transform .2s;
+  transition: transform .1s;
 }
 .zoom:hover {
   transform: scale(1.05);
@@ -279,4 +310,11 @@ a:not(.sponsor-obj, .jumpstart-apply, .btn) {
   height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+
+svg{
+  margin: 0;
+  padding: 0;
+  height: 0;
 }

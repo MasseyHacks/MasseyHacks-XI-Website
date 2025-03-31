@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('fonts/Minecraftia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* apply Minecraftia font to the entire page */
+body, .whatisMH, .topcontainer, .bottomcontainer, 
+.window1, .window2, .topbar, .tabs, .tab, .content {
+    font-family: 'Minecraftia', monospace;
+}
+
+
+.whatisMH {
+    display: flex; /* enable flexbox layout */
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; 
+    width: 100vw;
+    font-family: Arial, sans-serif; /* set font */
+}
+
+.topcontainer, .bottomcontainer {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+    width: 100%;
+}
+
+.topcontainer{
+    margin-bottom: -5%; /* overlap*/
+}
+
+.img1, .img2{
+    padding: 1%;
+    max-height: 40vh;
+    width: auto;
+}
+
+.img1{
+    padding-bottom: 6%;
+}
+
+.img2{
+    padding-top: 6%;
+}
+
+/* main window container */
+.window1, .window2 {
+    background: white;
+    width: 45%; /* fixed width */
+    height: 100%; /* fixed height */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* shadow */
+    position: relative; /* to align elements inside */
+}
+
+
+
+/* TOP BAR OF WINDOW */
+.topbar {
+    display: flex; 
+    align-items: center; /* aligns items vertically */
+    padding: 10px; /* adds spacing inside the header */
+    padding-bottom: 0px; /* remove bottom padding */
+    background: #ddd; /* color of top bar (light grey) */
+    border-radius: 10px 10px 0 0; /* rounds only the top corners */
+}
+
+/* 3 DOTS CONTAINER */
+.dots {
+    display: flex; 
+    gap: 0.4vw; /* space between the dots */
+    margin-left: 10px; 
+}
+
+/* STYLE FOR DOTS */
+.dot {
+    width: 0.8vw; /* radius */
+    height: 0.8vw; /* radius */
+    border-radius: 50%; /* makes it round */
+    display: inline-block; /* makes the dots inline elements */
+}
+
+/* colors for each dot */
+.dot.red { background: #ff5f57; } 
+.dot.yellow { background: #ffbd2e; } 
+.dot.green { background: #28c840; } 
+
+/* TABS */
+.tabs {
+    display: flex;
+    margin-left: 1vw; /* space between dots and tabs */
+}
+
+/* INDIVIDUAL TAB STYLES */
+.tab {
+    background: #eaeaea; /* light grey bg */
+    padding: 0.5vw 1vw; /* padding inside each tab */
+    border-radius: 8px 8px 0 0; /* rounds only the top corners */
+    margin-right: 5px; /* space between tabs */
+    cursor: pointer; /* changes the cursor to pointer for clickability */
+    font-weight: bold; 
+    color: #666; /* text color */
+}
+
+/* STYLE FOR CLICKED TAB */
+.tab.active {
+    background: white;
+    color: black; 
+}
+
+/* CONTENT AREA */
+.content {
+    align-items: center;
+    padding: 1vw; /* adds padding inside */
+    font-size: 1.3vw; /* font size */
+    text-align: center; /* centers the text */
+    
+    align-items: center;
+    overflow: hidden; /* hide anything overflowing */
+}
+
+/* CONTENT FOR WHEN IFRAME USED*/
+.content.no-padding {
+    padding: 0;
+    height: 88%;
+    /* round border radii */
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .whatisMH {
+        align-items:center;
+        justify-content: space-evenly;
+    }
+    
+    /* main window container */
+    .window1, .window2 {
+        width: 70vw; /* fixed width */
+        height: 60vw; /* fixed height */
+    }
+    
+    .window1{
+        z-index: 1; /* put window1 on top */
+        margin-bottom: 0vh; /* overlap by 5% of viewport height */
+        margin-left: 0vw; /* 5% offset to the right */
+    }
+    
+    .window2 {
+        align-self: center;
+        z-index: 2; /* put window2 behind */
+        margin-right: 0vw;
+    }
+
+    .content{
+        font-size: 2.9vw;
+    }
+
+    .tab {
+        font-size: 2.9vw;
+    }
+
+    /* STYLE FOR DOTS */
+    .dot {
+        width: 1.2vw; /* radius */
+        height: 1.2vw; /* radius */
+    }
+    
+}

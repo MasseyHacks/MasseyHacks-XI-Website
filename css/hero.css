@@ -1,5 +1,22 @@
 .hero-logo {
-  width: 22rem !important;
+  width: 16rem !important;
+  animation: brush-stroke 0.5s ease-in forwards;
+  clip-path: inset(0 100% 0 0); /* Initially clip all from right */
+  
+  /* clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  transition: clip-path 2s ease; */
+}
+
+
+
+
+@keyframes brush-stroke {
+  0% {
+    clip-path: inset(0 100% 0 0); /* Start with clipping all from the right */
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Reveal fully from left to right */
+  }
 }
 
 #home {
@@ -40,7 +57,7 @@
   display: inline-block;
   text-align: center;
   border: 1px solid white;
-  box-shadow: 0 0 8px 4px #9000ff, inset 0 0 8px 4px  #9000ff;
+  /* box-shadow: 0 0 8px 4px #9000ff, inset 0 0 8px 4px  #9000ff; */
 }
 #application-div:hover {
   background-color: var(--dark-blue) !important;
@@ -136,7 +153,7 @@
 }
 
 .countdown-border {
-  box-shadow: 0px 0px 10px 4px #BB00FF;
+  /* box-shadow: 0px 0px 10px 4px #BB00FF; */
   border: 1px solid white;
   color: var(--dark-blue) !important;
   border-radius: 1rem;
@@ -182,8 +199,8 @@
 }
 /* @media screen and (min-width: 375px) { */
 .btn {
-  margin: 5%;
-  max-width: 50%;
+  margin: 10%;
+  max-width: 75%;
 }
 .hero-logo {
   width: 13rem;
@@ -242,6 +259,10 @@
   }
 }
 
+
+
+
+
 #transparency-report{
   margin-top: 15px;
   padding: 7px;
@@ -253,5 +274,5 @@
   border-radius: 1rem;
   text-align: center;
   border: 1px solid white;
-  box-shadow: 0 0 8px 4px #9000ff, inset 0 0 8px 4px  #9000ff;
+  /* box-shadow: 0 0 8px 4px #9000ff, inset 0 0 8px 4px  #9000ff; */
 }
