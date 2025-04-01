@@ -8,7 +8,9 @@
 /* apply Minecraftia font to the entire page */
 body, .whatisMH, .topcontainer, .bottomcontainer, 
 .window1, .window2, .topbar, .tabs, .tab, .content {
-    font-family: 'Minecraftia', monospace;
+    font-family: "Minecraftia", monospace;
+    color: black;
+    /* font-size: 0.5px; */
 }
 
 /* set bg color and center the search engine window */
@@ -123,7 +125,7 @@ body {
     display: flex;              /* Enable flexbox */
     justify-content: center;    /* Centers text horizontally */
     align-items: center;        /* Centers text vertically */
-    font-size: 1.3vw;           /* Font size */
+    font-size: 1.2vw;           /* Font size */
     text-align: center;         /* Centers the text horizontally */
     overflow: hidden;           /* Hide anything overflowing */
     height: 100%; 

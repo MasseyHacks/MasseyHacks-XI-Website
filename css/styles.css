@@ -240,6 +240,8 @@ p {
   z-index: -1;
   border-radius: 1.5vh;
   background-size: contain; /* Fits inside the box without cropping */
+  pointer-events: none; /* Prevents interactions affecting it */
+
   /* background-size: cover;  Fills the box but may crop the image */
 }
 
