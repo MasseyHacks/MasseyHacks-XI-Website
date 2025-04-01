@@ -11,6 +11,10 @@ body, .whatisMH, .topcontainer, .bottomcontainer,
     font-family: 'Minecraftia', monospace;
 }
 
+/* set bg color and center the search engine window */
+body {
+    background-color: #f3ecff; 
+}
 
 .whatisMH {
     display: flex; /* enable flexbox layout */
@@ -144,6 +148,7 @@ iframe {
 /* Media query for smaller devices */
 @media (max-width: 768px) {
     .whatisMH {
+        flex-direction: column;
         align-items:center;
         justify-content: space-evenly;
     }
@@ -151,12 +156,12 @@ iframe {
     /* main window container */
     .window1, .window2 {
         width: 70vw; /* fixed width */
-        height: 60vw; /* fixed height */
+        height: 80vw; /* fixed height */
     }
     
     .window1{
         z-index: 1; /* put window1 on top */
-        margin-bottom: 0vh; /* overlap by 5% of viewport height */
+        margin-bottom: 10vh; /* overlap by 5% of viewport height */
         margin-left: 0vw; /* 5% offset to the right */
     }
     
@@ -180,4 +185,7 @@ iframe {
         height: 1.2vw; /* radius */
     }
     
+    .img1, .img2 {
+        display: none; /* Hide the images on mobile */
+    }
 }

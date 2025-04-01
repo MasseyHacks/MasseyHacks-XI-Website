@@ -248,9 +248,11 @@ i{
   color:var(--dark-color);
 }
 
+/*
 .content{
   color: var(--dark-color)
 }
+  */
 
 .btn-row{
   display: flex;
