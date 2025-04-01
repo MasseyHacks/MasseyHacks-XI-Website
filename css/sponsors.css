@@ -138,21 +138,12 @@
 }
 
 @media only screen and (min-width: 768px) {
-  #about,
-  #sponsors > .glass-card,
-  #sponsors > .white-card,
-  #partners > .glass-card,
-  #partners > .white-card,
-  #faq > .glass-card
-}
-
-@media only screen and (min-width: 1200px) {
   #sponsors > .glass-card,
   #sponsors > .white-card,
   #partners > .glass-card,
   #partners > .white-card,
   #faq > .glass-card,
-  #carousel {
-    width: 50%;
-  }
+    #carousel {
+      width: 50%;
+    }
 }

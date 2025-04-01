@@ -109,6 +109,7 @@ body {
     cursor: pointer; /* changes the cursor to pointer for clickability */
     font-weight: bold; 
     color: #666; /* text color */
+    font-size: 1.5vh;
 }
 
 /* STYLE FOR CLICKED TAB */
@@ -119,13 +120,14 @@ body {
 
 /* CONTENT AREA */
 .content {
-    align-items: center;
-    padding: 1vw; /* adds padding inside */
-    font-size: 1.3vw; /* font size */
-    text-align: center; /* centers the text */
-    
-    align-items: center;
-    overflow: hidden; /* hide anything overflowing */
+    display: flex;              /* Enable flexbox */
+    justify-content: center;    /* Centers text horizontally */
+    align-items: center;        /* Centers text vertically */
+    font-size: 1.3vw;           /* Font size */
+    text-align: center;         /* Centers the text horizontally */
+    overflow: hidden;           /* Hide anything overflowing */
+    height: 100%; 
+    margin-top: -5vh;
 }
 
 /* CONTENT FOR WHEN IFRAME USED*/
@@ -135,6 +137,7 @@ body {
     /* round border radii */
     border-bottom-left-radius: 10px; 
     border-bottom-right-radius: 10px; 
+    margin-top: 0vh !important;
 }
 
 iframe {
@@ -172,11 +175,11 @@ iframe {
     }
 
     .content{
-        font-size: 2.9vw;
+        font-size: 1.3vh !important;
     }
 
     .tab {
-        font-size: 2.9vw;
+        font-size: 1.3vh !important;
     }
 
     /* STYLE FOR DOTS */
