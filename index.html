@@ -119,6 +119,183 @@
 
     </script>
 
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      .bodyy {
+          font-family: "IBM Plex Sans";
+          background: linear-gradient(140deg, rgba(238,175,97,1) 0%, rgba(238,93,108,1) 100%);
+          background-repeat: no-repeat;
+          color: white;
+      }
+
+      .bgimg {
+          width: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: -1;
+      }
+
+      .container {
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .h11 {
+          margin: 4rem 0;
+          text-align: center;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgba(255, 255, 255, 1);
+          -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+          font-size: 56px;
+      }
+
+      .section {
+          display: flex;
+          justify-content: flex-start;
+          height: 600px;
+      }
+
+      .sec2 {
+          justify-content: flex-start;
+          margin-left: 1rem;
+      }
+
+      .section-left {
+          position: relative;
+          width: 600px;
+          height: 350px;
+      }
+
+      .section-right {
+          width: 600px;
+          margin: 0 1rem;
+      }
+
+      .h22 {
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+          font-size: 1.3rem;
+          color: rgba(255, 255, 255, 0.7);
+          cursor: pointer;
+          transition: 0.4s ease;
+      }
+
+      .h22:hover {
+          color: rgba(255, 255, 255, 1);
+      }
+
+      p, li {
+          color: rgba(240, 240, 240, 0.7);
+          font-size: 18px;
+      }
+
+      @media (max-width: 600px) {
+          .bgimg {
+              height: 150vh;
+          }
+          .section {
+              height: auto;
+              margin: 2rem 0;
+          }
+          .section-left {
+              display: none;
+          }
+          .section-right {
+              display: flex;
+              flex-direction: column;
+              width: 90vw;
+          }
+          .h11 {
+              font-size: 42px;
+          }
+          .h22 {
+              margin: 1rem 0;
+          }
+      }
+
+      .img-container {
+          position: relative;
+          width: 525px;
+          height: 100%;
+          overflow: hidden;
+      }
+
+      .carousel {
+          position: relative;
+          width: 100%;
+          height: 400px;
+          overflow: hidden;
+      }
+
+      .carousel-images {
+          display: flex;
+          width: 100%;
+          transition: transform 1s ease-in-out;
+      }
+
+      .carousel-images img {
+          width: 100%;
+          object-fit: cover;
+      }
+
+      .carousel-images {
+          animation: slide 30s infinite;
+      }
+
+      @keyframes slide {
+          0% {
+              transform: translateX(0);
+          }
+          10% {
+              transform: translateX(-100%);
+          }
+          20% {
+              transform: translateX(-100%);
+          }
+          30% {
+              transform: translateX(-200%);
+          }
+          40% {
+              transform: translateX(-200%);
+          }
+          50% {
+              transform: translateX(-300%);
+          }
+          60% {
+              transform: translateX(-300%);
+          }
+          70% {
+              transform: translateX(-400%);
+          }
+          80% {
+              transform: translateX(-400%);
+          }
+          100% {
+              transform: translateX(0);
+          }
+      }
+
+      .border {
+          filter: brightness(1.3);
+      }
+    </style>
+
+
+
     <style>
     @font-face {
       font-family: 'Minecraftia';
@@ -735,445 +912,113 @@ Thank you all for coming. <br> See you at MasseyHacks X!
     </section> 
     -->
     <!-- FAQ -->
-    <div id="faq" class="anchack"></div>
+    <!-- <div id="faq" class="anchack"></div> -->
     <section id="faq" data-aos="fade-up">
-      <h1></h1>
-      <div class="glass-card">
-        <!-- Left column -->
-        <div class="accordion accordion-flush" id="accordl">
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="l1-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#l1"
-                aria-expanded="false"
-                aria-controls="l1"
-              >
-                How do I apply?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="l1"
-              aria-labelledby="l1-heading"
-              data-bs-parent="#accordl"
-            >
-              <div class="accordion-body">
-                Applications are closed. Check your email in the coming days for your application status!  
-              </div>
-              
+      <body class="bodyy">
+        <h1 class="h11"></h1>
+        <div class="container">
+            <img src="bricks.png" alt="" class="bgimg">
+            <div class="section sec1">
+                <div class="section-left">
+                    <img src="images/img/img/border.png" alt=""  style="width: 625px; height: 440px; position: absolute; top: -40px; left: -50px; z-index: 2;">
+                    <div class="img-container">
+                      <div class="carousel">
+                          <div class="carousel-images">
+                              <img src="images/img/img/8.jpg" alt="Image 1">
+                              <img src="images/img/img/7.jpg" alt="Image 2">
+                              <img src="images/img/img/6.jpg" alt="Image 3">
+                              <img src="images/img/img/5.jpg" alt="Image 4">
+                              <img src="images/img/img/4.jpg" alt="Image 5">
+                              <img src="images/img/img/3.jpg" alt="Image 6">
+                              <img src="images/img/img/2.jpg" alt="Image 7">
+                              <img src="images/img/img/1.jpg" alt="Image 8">
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="section-right">
+                    <h2 onclick="toggleAnswer(this)"><i class="h22 fa-solid fa-chevron-down"></i> Q: Does it cost anything to attend?</h2>
+                    <p style="display:none;">Nope, MasseyHacks is absolutely free to attend!</p>
+                    
+                    <h2 onclick="toggleAnswer(this)"><i class="h22 fa-solid fa-chevron-down"></i> Q: Will food be provided?</h2>
+                    <p style="display:none;">Yes, meals and snacks will be provided free of cost. We will accommodate any food sensitivities to the best of our ability.</p>
+                
+                    <h2 onclick="toggleAnswer(this)"><i class="h22 fa-solid fa-chevron-down"></i> Q: Who can participate?</h2>
+                    <p style="display:none;">MasseyHacks welcomes students from grades 7-12.</p>
+    
+                    <h2 onclick="toggleAnswer(this)"><i class="h22 fa-solid fa-chevron-down"></i> Q: Do I need programming experience to participate?</h2>
+                    <p style="display:none;">Not at all! At MasseyHacks, we'll teach you the fundamentals you need to know to make your project through beginner workshops and mentors who will assist you if you ever need any help.</p>
+                
+                    
+                </div>
             </div>
-          </div>
-          <!-- End question -->
-
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="l2-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#l2"
-                aria-expanded="false"
-                aria-controls="l2"
-              >
-                Does it cost anything to attend?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="l2"
-              aria-labelledby="l2-heading"
-              data-bs-parent="#accordl"
-            >
-              <div class="accordion-body">
-                Nope, MasseyHacks is absolutely free to attend!
-              </div>
+    
+            <div class="section sec2">
+                <div class="section-right">
+                    <h2 onclick="toggleAnswer(this)"><i class="h22 fa-solid fa-chevron-down"></i> Q: How many people can I have on my team?</h2>
+                    <p style="display:none;">You can have a maximum of 4 people on your team!</p>
+    
+                    <h2 onclick="toggleAnswer(this)"><i class="h22 fa-solid fa-chevron-down"></i> Q: Will MasseyHacks be overnight?</h2>
+                    <p style="display:none;">Unfortunately, we cannot provide overnight accommodation at the MasseyHacks venue, so hackers will be required to leave the venue Saturday evening and return to the venue Sunday morning. However, we will still be providing mentorship and support for hackers throughout the night as they continue working on their projects.</p>
+                
+                    <h2 onclick="toggleAnswer(this)"><i class="h22 fa-solid fa-chevron-down"></i> Q: What do I need to bring?</h2>
+                    <p style="display:none;">
+                        We recommend bringing the following:
+        
+                        <br><br>
+                    
+                        - A piece of photo ID for check-in (e.g. student card, passport, or driver's license)<br>
+                        - Your laptop<br>
+                        - Laptop/phone chargers<br>
+        
+                        <br>
+        
+                        Food, beverages, and the rest will all be provided! School computers will be available for use during the event, but we cannot guarantee one for everyone.
+                    </p>
+    
+                    <h2 onclick="toggleAnswer(this)"><i class="h22 fa-solid fa-chevron-down"></i> Q: What activities and workshops will be at MasseyHacks?</h2>
+                    <p style="display:none;">A variety of fun activities like cup-stacking, karaoke, and therapy dogs and a diverse selection of computer science workshops will be available throughout the event. These will be featured on the schedule which will be posted closer to the event date!</p>
+                </div>
+    
+                <div class="section-left">
+                    <img src="images/img/img/border.png" alt="" style="width: 625px; height: 440px; position: absolute; top: -40px; left: -50px; z-index: 2;">
+                    <div class="img-container">
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="images/img/img/1.jpg" alt="Image 1">
+                                <img src="images/img/img/2.jpg" alt="Image 2">
+                                <img src="images/img/img/3.jpg" alt="Image 3">
+                                <img src="images/img/img/4.jpg" alt="Image 4">
+                                <img src="images/img/img/5.jpg" alt="Image 5">
+                                <img src="images/img/img/6.jpg" alt="Image 6">
+                                <img src="images/img/img/7.jpg" alt="Image 7">
+                                <img src="images/img/img/8.jpg" alt="Image 8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- End question -->
-
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="l3-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#l3"
-                aria-expanded="false"
-                aria-controls="l3"
-              >
-                Is MasseyHacks in-person or online?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="l3"
-              aria-labelledby="l3-heading"
-              data-bs-parent="#accordl"
-            >
-              <div class="accordion-body">
-                MasseyHacks XI will be in-person. Hackers will not have the
-                option to participate fully virtually as we return to a more
-                traditional form of MasseyHacks. Unfortunately, we cannot
-                provide overnight accommodation at the MasseyHacks venue, so
-                hackers will be required to go home for the night and return in
-                the morning.
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
-
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="l4-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#l4"
-                aria-expanded="false"
-                aria-controls="l4"
-              >
-                Will food be provided?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="l4"
-              aria-labelledby="l4-heading"
-              data-bs-parent="#accordl"
-            >
-              <div class="accordion-body">
-                Yes, meals and snacks will be provided free of cost. We will
-                accommodate any food sensitivities to the best of our ability.
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
-
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="l5-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#l5"
-                aria-expanded="false"
-                aria-controls="l5"
-              >
-                What about COVID-19?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="l5"
-              aria-labelledby="l5-heading"
-              data-bs-parent="#accordl"
-            >
-              <div class="accordion-body">
-                We will have masks available and provided upon request. Any
-                individuals who are sick or experiencing symptoms will be moved
-                to an isolation room and asked to go home. This information may
-                be updated in the future to further reflect local, provincial,
-                and federal guidelines.
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
-
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="l6-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#l6"
-                aria-expanded="false"
-                aria-controls="l6"
-              >
-                Do I need a team to participate?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="l6"
-              aria-labelledby="l6-heading"
-              data-bs-parent="#accordl"
-            >
-              <div class="accordion-body">
-                You don't need to be in a team to participate in MasseyHacks!
-                It's up to you whether you choose to fly solo or group up with
-                your friends. And who knows: you might meet some cool new people
-                too!
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
-
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="l7-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#l7"
-                aria-expanded="false"
-                aria-controls="l7"
-              >
-                What is the Code of Conduct?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="l7"
-              aria-labelledby="l7-heading"
-              data-bs-parent="#accordl"
-            >
-              <div class="accordion-body">
-                All hackers must abide by the
-                <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-                  >Code of Conduct</a
-                >.
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
         </div>
-        <!-- Right column ---------------------------------------------------------------------->
-        <div class="accordion accordion-flush" id="accordr">
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="r1-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#r1"
-                aria-expanded="false"
-                aria-controls="r1"
-              >
-                Who can participate?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="r1"
-              aria-labelledby="r1-heading"
-              data-bs-parent="#accordr"
-            >
-              <div class="accordion-body">
-                MasseyHacks welcomes students from grades 7-12.
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
 
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="r2-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#r2"
-                aria-expanded="false"
-                aria-controls="r2"
-              >
-                Do I need programming experience to participate?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="r2"
-              aria-labelledby="r2-heading"
-              data-bs-parent="#accordr"
-            >
-              <div class="accordion-body">
-                Not at all! At MasseyHacks, we'll teach you the fundamentals you
-                need to know to make your project through beginner workshops and
-                mentors who will assist you if you ever need any help.
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
-
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="r3-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#r3"
-                aria-expanded="false"
-                aria-controls="r3"
-              >
-                How many people can I have on my team?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="r3"
-              aria-labelledby="r3-heading"
-              data-bs-parent="#accordr"
-            >
-              <div class="accordion-body">
-                You can have as many as 4 people per team!
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
-
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="r4-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#r4"
-                aria-expanded="false"
-                aria-controls="r4"
-              >
-                Where is MasseyHacks being held?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="r4"
-              aria-labelledby="r4-heading"
-              data-bs-parent="#accordr"
-            >
-              <div class="accordion-body">
-                MasseyHacks will be held at
-                <a href="https://goo.gl/maps/4AGgpJL6Ha6UbMEx8"
-                  >Vincent Massey Secondary School</a
-                >
-                at 1800 Liberty St, Windsor, ON.
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
-
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="r5-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#r5"
-                aria-expanded="false"
-                aria-controls="r5"
-              >
-                Will MasseyHacks run overnight?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="r5"
-              aria-labelledby="r5-heading"
-              data-bs-parent="#accordr"
-            >
-              <div class="accordion-body">
-                Unfortunately,
-                <span style="font-weight: bold"
-                  >we cannot provide overnight accommodation</span
-                >
-                at the MasseyHacks venue, so hackers will be required to leave
-                the venue Saturday evening and return to the venue Sunday
-                morning. However, we will still be providing mentorship and
-                support for hackers throughout the night as they continue
-                working on their projects.
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
-
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="r6-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#r6"
-                aria-expanded="false"
-                aria-controls="r6"
-              >
-                What do I need to bring?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="r6"
-              aria-labelledby="r6-heading"
-              data-bs-parent="#accordr"
-            >
-              <div class="accordion-body">
-                We recommend bringing the following:
-                <ul style="list-style-position: inside">
-                  <li>
-                    a piece of photo ID for check-in (e.g. student card,
-                    passport, or drivers license)
-                  </li>
-                  <li>your laptop</li>
-                  <li>laptop/phone chargers</li>
-                </ul>
-                <br />
-                Food, beverages, and the rest will all be provided! School
-                computers will be available for use during the event, but we
-                cannot guarantee one for everyone.
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
-          <!-- Begin question -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="r7-heading">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#r7"
-                aria-expanded="false"
-                aria-controls="r7"
-              >
-                What activities and workshops will be at MasseyHacks?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="r7"
-              aria-labelledby="r7-heading"
-              data-bs-parent="#accordr"
-            >
-              <div class="accordion-body">
-                A variety of fun activities like cup-stacking, karaoke, and therapy dogs and a diverse selection of computer science workshops will be available throughout the event. These will be featured on the schedule which will be posted closer to the event date!
-                <!-- You can find the schedule <a href="#schedule">here</a> -->
-              </div>
-            </div>
-          </div>
-          <!-- End question -->
-        </div>
-      </div>
-      <!-- Separate card -->
-      <div class="glass-card faq-prompt">
-        <p>
-          If you have any questions or would like to inform us of any issues,
-          please email us at
-          <a href="mailto:hello@masseyhacks.ca">hello@masseyhacks.ca</a>
-        </p>
-      </div>
+    
     </section>
+    <script>
+      window.onload = function() {
+          var totalImages = document.querySelectorAll('.carousel-images img').length;
+          var randomStart = Math.floor(Math.random() * totalImages);
+          var carousel = document.querySelector('.carousel-images');
+
+          carousel.style.transform = `translateX(-${randomStart * 100}%)`;
+      };
+
+      function toggleAnswer(element) {
+          const answer = element.nextElementSibling;
+          const isVisible = answer.style.display === 'block';
+          document.querySelectorAll('p').forEach(p => p.style.display = 'none');
+          answer.style.display = isVisible ? 'none' : 'block';
+      }
+    </script>
+
     
      <!-- Sponsors  -->
     <div id="sponsors" class="anchack"></div>
