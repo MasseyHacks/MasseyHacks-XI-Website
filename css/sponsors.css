@@ -83,17 +83,14 @@
 }
 .gold {
   /* border: solid gold 2px !important; */
-  border: none;
   /* box-shadow: 0 0 5px 1px gold, inset 0 0 5px 1px gold; */
 }
 .silver {
   /* border: solid silver 2px !important; */
-  border: none;
   /* box-shadow: 0 0 5px 1px silver, inset 0 0 5px 1px silver; */
 }
 .bronze {
   /* border: solid #cd7f32 2px !important; */
-  border: none;
   /* box-shadow: 0 0 5px 1px #cd7f32, inset 0 0 5px 1px #cd7f32; */
 }
 .partner img {
