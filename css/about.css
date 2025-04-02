@@ -16,6 +16,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (max-width: 768px) {
+  #about {
+    gap: 2em;
+    min-height: 200vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
 .shadow {
   box-shadow: 0 0 5px 1px #BB00FF, inset 0 0 5px 1px  #BB00FF;
   overflow: visible;

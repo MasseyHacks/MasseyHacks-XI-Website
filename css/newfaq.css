@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyy {
+    font-family: "IBM Plex Sans";
+    background: linear-gradient(140deg, rgba(238,175,97,1) 0%, rgba(238,93,108,1) 100%);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.bgimg {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    padding: 1rem;
+    padding-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h11 {
+    margin: 4rem 0;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    font-size: 56px;
+}
+
+.h22 i {
+  transition: transform 0.3s ease;
+}
+
+.h22.active i {
+  transform: rotate(180deg);
+}
+
+
+.section {
+    display: flex;
+    justify-content: flex-start;
+    height: 600px;
+}
+
+.sec2 {
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.section-left {
+    position: relative;
+    width: 600px;
+    height: 350px;
+}
+
+.section-right {
+    width: 600px;
+    height: fit-content;
+    padding: 2rem;
+    margin: 0 1rem;
+    background: rgba(255,255,255,0.25);
+    /* background-image: url("/assets/YellowSpalt.png"); */
+    /* background-position: center; */
+    /* background-size: 150%; */
+    /* background-repeat: no-repeat; */
+    background: var(--dark-blue);
+    background-clip: text;
+    /* box-shadow: 0px 0px 30px  #6A0D8x3; */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+  }
+
+.h22 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.h22:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 768px) {
+    .bgimg {
+        display: none;
+    }
+    .section {
+        height: auto;
+        margin: 2rem 0;
+        /* background-image: url("assets/YellowSpalt.png"); */
+    }
+    .section-left {
+        display: none;
+    }
+    .section-right {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .h11 {
+        font-size: 42px;
+    }
+    .h22 {
+        margin: 1rem 0;
+        /* font-size: 8rem; */
+    }
+    .img-container{
+        display: none;
+    }
+}
+
+.img-container {
+    position: relative;
+    width: 525px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-images {
+    animation: slide 30s infinite;
+}
+
+.answer {
+  max-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+
+.answer::-webkit-scrollbar {
+    width: 5px;  /* Set a visible scrollbar width */
+}
+
+.answer::-webkit-scrollbar-track {
+    background: transparent;
+}
+.answer::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.604);  /* Make the scrollbar visible */
+}
+
+.answer.show {
+  max-height: 100px; /* Adjust based on content */
+  opacity: 1;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(-200%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-300%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    70% {
+        transform: translateX(-400%);
+    }
+    80% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.border {
+    filter: brightness(1.3);
+}

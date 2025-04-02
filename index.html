@@ -75,7 +75,7 @@
     <link rel="stylesheet" href="css/schedule.css" />
     <link rel="stylesheet" href="css/classic-10_7_dtp.css" />
     <link rel="stylesheet" href="css/window.css" />
-    
+    <link rel="stylesheet" href="css/newfaq.css" />
 
     <script>
       function changeTab(tabName, element, contentId) {
@@ -97,7 +97,7 @@
       } else if (tabName === "Location") {
           iframeHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.8704827993647!2d-83.03067432514656!3d42.259938341423066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c50a312539fbd%3A0x6f8247b9fd6a69fd!2sVincent%20Massey%20Secondary%20School!5e0!3m2!1sen!2sca!4v1743451648040!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
       } else if (tabName === "Code of Conduct") {
-          iframeHTML = '<iframe src="files/code-of-conduct.html" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+          iframeHTML = '<iframe src="files/code-of-conduct.html" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" sandbox="allow-same-origin allow-scripts"></iframe>';
       } else if (tabName === "General Info") {
           newContent = "Helpful information for the event!";
       } else if (tabName === "Hello World") {
@@ -118,202 +118,6 @@
     }
 
     </script>
-
-
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-      * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-      }
-
-      .bodyy {
-          font-family: "IBM Plex Sans";
-          background: linear-gradient(140deg, rgba(238,175,97,1) 0%, rgba(238,93,108,1) 100%);
-          background-repeat: no-repeat;
-          color: white;
-      }
-
-      .bgimg {
-          width: 100%;
-          position: fixed;
-          top: 0;
-          left: 0;
-          z-index: -1;
-      }
-
-      .container {
-          padding: 1rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-
-      .h11 {
-          margin: 4rem 0;
-          text-align: center;
-          height: 100px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: rgba(255, 255, 255, 1);
-          -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
-          font-size: 56px;
-      }
-
-      .header2 {
-
-      }
-
-      .section {
-          display: flex;
-          justify-content: flex-start;
-          height: 600px;
-      }
-
-      .sec2 {
-          justify-content: flex-start;
-          margin-left: 1rem;
-      }
-
-      .section-left {
-          position: relative;
-          width: 600px;
-          height: 350px;
-      }
-
-      .section-right {
-          width: 600px;
-          height: fit-content;
-          padding: 2rem;
-          margin: 0 1rem;
-          background: rgba(255,255,255,0.25);
-          /* background-image: url("/assets/YellowSpalt.png"); */
-          /* background-position: center; */
-          /* background-size: 150%; */
-          /* background-repeat: no-repeat; */
-          background: var(--dark-blue);
-          background-clip: text;
-          /* box-shadow: 0px 0px 30px  #6A0D8x3; */
-          backdrop-filter: blur(5px);
-          -webkit-backdrop-filter: blur(5px);
-  
-        }
-
-      .h22 {
-          margin-top: 1rem;
-          margin-bottom: 1rem;
-          font-size: 1.3rem;
-          color: rgba(255, 255, 255, 0.7);
-          cursor: pointer;
-          transition: 0.4s ease;
-      }
-
-      .h22:hover {
-          color: rgba(255, 255, 255, 1);
-      }
-
-      p, li {
-          color: rgba(240, 240, 240, 0.7);
-          font-size: 20px;
-      }
-
-      @media (max-width: 600px) {
-          .bgimg {
-              height: 150vh;
-          }
-          .section {
-              height: auto;
-              margin: 2rem 0;
-              /* background-image: url("assets/YellowSpalt.png"); */
-          }
-          .section-left {
-              display: none;
-          }
-          .section-right {
-              display: flex;
-              flex-direction: column;
-              width: 90vw;
-          }
-          .h11 {
-              font-size: 42px;
-          }
-          .h22 {
-              margin: 1rem 0;
-              /* font-size: 8rem; */
-          }
-      }
-
-      .img-container {
-          position: relative;
-          width: 525px;
-          height: 100%;
-          overflow: hidden;
-      }
-
-      .carousel {
-          position: relative;
-          width: 100%;
-          height: 400px;
-          overflow: hidden;
-      }
-
-      .carousel-images {
-          display: flex;
-          width: 100%;
-          transition: transform 1s ease-in-out;
-      }
-
-      .carousel-images img {
-          width: 100%;
-          object-fit: cover;
-      }
-
-      .carousel-images {
-          animation: slide 30s infinite;
-      }
-
-      @keyframes slide {
-          0% {
-              transform: translateX(0);
-          }
-          10% {
-              transform: translateX(-100%);
-          }
-          20% {
-              transform: translateX(-100%);
-          }
-          30% {
-              transform: translateX(-200%);
-          }
-          40% {
-              transform: translateX(-200%);
-          }
-          50% {
-              transform: translateX(-300%);
-          }
-          60% {
-              transform: translateX(-300%);
-          }
-          70% {
-              transform: translateX(-400%);
-          }
-          80% {
-              transform: translateX(-400%);
-          }
-          100% {
-              transform: translateX(0);
-          }
-      }
-
-      .border {
-          filter: brightness(1.3);
-      }
-    </style>
-
-
 
     
 
@@ -592,11 +396,15 @@ Thank you all for coming. <br> See you at MasseyHacks X!
     </section>
 
     <!-- About -->
-    <div style="margin-top: 30rem;"></div>
     <section
       id="about"
       class="row"
-      style="grid-auto-flow: row"
+      style="grid-auto-flow: row;
+      margin-top: 10rem;
+      @media (max-width: 768px) {
+
+      }
+      "
       data-aos="fade-right"
     >
       <div class="whatisMH">
@@ -748,7 +556,8 @@ Thank you all for coming. <br> See you at MasseyHacks X!
     -->
     <!-- FAQ -->
     <!-- <div id="faq" class="anchack"></div> -->
-    <section id="faq" data-aos="fade-up" style="margin-top: 25rem;">
+
+    <section id="faq" data-aos="fade-up" style="margin-top: 15rem; margin-bottom: 0rem; padding-bottom: 0rem;">
       <body class="bodyy">
         <h1 class="h11"></h1>
         <div class="container">
@@ -772,17 +581,25 @@ Thank you all for coming. <br> See you at MasseyHacks X!
                   </div>
                 </div>
                 <div class="section-right">
-                    <h2 onclick="toggleAnswer(this)" class="h22"><i class="h22 fa-solid fa-chevron-down"></i> Q: Does it cost anything to attend?</h2>
-                    <p style="display:none;">Nope, MasseyHacks is absolutely free to attend!</p>
-                    
-                    <h2 onclick="toggleAnswer(this)" class="h22"><i class="h22 fa-solid fa-chevron-down"></i> Q: Will food be provided?</h2>
-                    <p style="display:none;">Yes, meals and snacks will be provided free of cost. We will accommodate any food sensitivities to the best of our ability.</p>
+                  <h2 onclick="toggleAnswer(this)" class="h22">
+                    <i class="h22 fa-solid fa-chevron-down"></i> Q: Does it cost anything to attend?
+                  </h2>
+                  <p class="answer">Nope, MasseyHacks is absolutely free to attend!</p>
                 
-                    <h2 onclick="toggleAnswer(this)" class="h22"><i class="h22 fa-solid fa-chevron-down"></i> Q: Who can participate?</h2>
-                    <p style="display:none;">MasseyHacks welcomes students from grades 7-12.</p>
-    
-                    <h2 onclick="toggleAnswer(this)" class="h22"><i class="h22 fa-solid fa-chevron-down"></i> Q: Do I need programming experience to participate?</h2>
-                    <p style="display:none;">Not at all! At MasseyHacks, we'll teach you the fundamentals you need to know to make your project through beginner workshops and mentors who will assist you if you ever need any help.</p>
+                  <h2 onclick="toggleAnswer(this)" class="h22">
+                    <i class="h22 fa-solid fa-chevron-down"></i> Q: Will food be provided?
+                  </h2>
+                  <p class="answer">Yes, meals and snacks will be provided free of cost. We will accommodate any food sensitivities to the best of our ability.</p>
+                
+                  <h2 onclick="toggleAnswer(this)" class="h22">
+                    <i class="h22 fa-solid fa-chevron-down"></i> Q: Who can participate?
+                  </h2>
+                  <p class="answer">MasseyHacks welcomes students from grades 7-12.</p>
+                
+                  <h2 onclick="toggleAnswer(this)" class="h22">
+                    <i class="h22 fa-solid fa-chevron-down"></i> Q: Do I need programming experience to participate?
+                  </h2>
+                  <p class="answer">Not at all! At MasseyHacks, we'll teach you the fundamentals you need to know to make your project through beginner workshops and mentors who will assist you if you ever need any help.</p>
                 
                     
                 </div>
@@ -790,14 +607,15 @@ Thank you all for coming. <br> See you at MasseyHacks X!
     
             <div class="section sec2">
                 <div class="section-right">
-                    <h2 onclick="toggleAnswer(this)" class="h22"><i class="h22 fa-solid fa-chevron-down"></i> Q: How many people can I have on my team?</h2>
-                    <p style="display:none;">You can have a maximum of 4 people on your team!</p>
+                    <h2 onclick="toggleAnswer(this)" class="h22">
+                      <i class="h22 fa-solid fa-chevron-down"></i>Q: How many people can I have on my team?</h2>
+                    <p class="answer">You can have a maximum of 4 people on your team!</p>
     
                     <h2 onclick="toggleAnswer(this)" class="h22"><i class="h22 fa-solid fa-chevron-down"></i> Q: Will MasseyHacks be overnight?</h2>
-                    <p style="display:none;">Unfortunately, we cannot provide overnight accommodation at the MasseyHacks venue, so hackers will be required to leave the venue Saturday evening and return to the venue Sunday morning. However, we will still be providing mentorship and support for hackers throughout the night as they continue working on their projects.</p>
+                    <p class="answer">Unfortunately, we cannot provide overnight accommodation at the MasseyHacks venue, so hackers will be required to leave the venue Saturday evening and return to the venue Sunday morning. However, we will still be providing mentorship and support for hackers throughout the night as they continue working on their projects.</p>
                 
                     <h2 onclick="toggleAnswer(this)" class="h22"><i class="h22 fa-solid fa-chevron-down"></i> Q: What do I need to bring?</h2>
-                    <p style="display:none;">
+                    <p class="answer">
                         We recommend bringing the following:
         
                         <br><br>
@@ -812,7 +630,7 @@ Thank you all for coming. <br> See you at MasseyHacks X!
                     </p>
     
                     <h2 onclick="toggleAnswer(this)" class="h22"><i class="h22 fa-solid fa-chevron-down"></i> Q: What activities and workshops will be at MasseyHacks?</h2>
-                    <p style="display:none;">A variety of fun activities like cup-stacking, karaoke, and therapy dogs and a diverse selection of computer science workshops will be available throughout the event. These will be featured on the schedule which will be posted closer to the event date!</p>
+                    <p class="answer">A variety of fun activities like cup-stacking, karaoke, and therapy dogs and a diverse selection of computer science workshops will be available throughout the event. These will be featured on the schedule which will be posted closer to the event date!</p>
                 </div>
     
                 <div class="section-left">
@@ -846,12 +664,21 @@ Thank you all for coming. <br> See you at MasseyHacks X!
           carousel.style.transform = `translateX(-${randomStart * 100}%)`;
       };
 
-      function toggleAnswer(element) {
-          const answer = element.nextElementSibling;
-          const isVisible = answer.style.display === 'block';
-          document.querySelectorAll('p').forEach(p => p.style.display = 'none');
-          answer.style.display = isVisible ? 'none' : 'block';
+      function toggleAnswer(question) {
+        let answer = question.nextElementSibling;
+        let icon = question.querySelector("i");
+
+        if (answer.classList.contains("show")) {
+          answer.classList.remove("show");
+          question.classList.remove("active");
+        } else {
+          document.querySelectorAll(".answer").forEach(p => p.classList.remove("show"));
+          document.querySelectorAll(".h22").forEach(h => h.classList.remove("active"));
+          answer.classList.add("show");
+          question.classList.add("active");
+        }
       }
+
     </script>
 
     
@@ -972,17 +799,18 @@ Thank you all for coming. <br> See you at MasseyHacks X!
         /></a>
       </div>
 
-    </div><!--BRONZE WHITE CARD DIV-->
+      <!-- Special Thanks
+    </div>
       <div class="white-card rounded sponsor_prompt">
         <div>
           <span style="color: black;">Special thanks to</span> <span style="font-weight: bold; color: black;">David Qian</span>
         </div>
       </div>
-      <!--
+    -->
     
-       Partners 
+      <!-- Partners -->
       <div id="partners" class="anchack"></div>
-      <section id="partners" data-aos="fade-up">
+      <section id="partners" data-aos="fade-up" style="margin-bottom: 0; padding-bottom: 0;">
         <h1>PARTNERS</h1>
         <div class="white-card rounded silver">
           <a
@@ -995,9 +823,18 @@ Thank you all for coming. <br> See you at MasseyHacks X!
               src="images/sponsors/partners/hack-the-north.svg"
               loading="lazy"
           /></a>
+          <a
+            class="sponsor-obj zoom"
+            href="https://mlh.io/"
+            target="_blank"
+            ><img
+              alt="Major League Hacking"
+              class="zoom"
+              src="images/sponsors/partners/mlh-logo-color.svg"
+              loading="lazy"
+          /></a>
         </div>
       </section>
-    -->
     </section>
     
     <!-- Footer -->

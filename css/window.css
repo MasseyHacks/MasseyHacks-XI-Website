@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Minecraftia';
-    src: url('fonts/Minecraftia.ttf') format('truetype');
+    font-family: 'Minecraftia' !important;
+    src: url('Minecraftia.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -8,14 +8,14 @@
 /* apply Minecraftia font to the entire page */
 body, .whatisMH, .topcontainer, .bottomcontainer, 
 .window1, .window2, .topbar, .tabs, .tab, .content {
-    font-family: "Minecraftia", monospace;
+    font-family: "Minecraftia", monospace !important;
     color: black;
     /* font-size: 0.5px; */
 }
 
 /* set bg color and center the search engine window */
 body {
-    background-color: #f3ecff; 
+    background-color: rgba(254, 254, 254, 0.788) !important;
 }
 
 .whatisMH {
@@ -56,7 +56,7 @@ body {
 
 /* main window container */
 .window1, .window2 {
-    background: white;
+    background: rgba(255, 255, 255, 0.85) !important;
     width: 45%; /* fixed width */
     height: 100%; /* fixed height */
     border-radius: 10px; /* rounded corners */
@@ -72,7 +72,7 @@ body {
     align-items: center; /* aligns items vertically */
     padding: 10px; /* adds spacing inside the header */
     padding-bottom: 0px; /* remove bottom padding */
-    background: #ddd; /* color of top bar (light grey) */
+    background: rgba(174, 105, 105, 0.3) !important; /* color of top bar (light grey) */
     border-radius: 10px 10px 0 0; /* rounds only the top corners */
 }
 
@@ -104,7 +104,7 @@ body {
 
 /* INDIVIDUAL TAB STYLES */
 .tab {
-    background: #eaeaea; /* light grey bg */
+    background: rgba(255, 217, 232, 0.531) !important; /* light grey bg */
     padding: 0.5vw 1vw; /* padding inside each tab */
     border-radius: 8px 8px 0 0; /* rounds only the top corners */
     margin-right: 5px; /* space between tabs */
@@ -112,11 +112,18 @@ body {
     font-weight: bold; 
     color: #666; /* text color */
     font-size: 1.5vh;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    margin-top:0;
+}
+.tab:hover{
+   /* transform: scale(1.05); Makes the tab larger */
+    background: #929292;
+    margin-top: -0.5vh;   
 }
 
 /* STYLE FOR CLICKED TAB */
 .tab.active {
-    background: white;
+    background: rgba(250, 235, 243, 0.669) !important;
     color: black; 
 }
 
@@ -129,7 +136,10 @@ body {
     text-align: center;         /* Centers the text horizontally */
     overflow: hidden;           /* Hide anything overflowing */
     height: 100%; 
-    margin-top: -5vh;
+    margin-top: -4.5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-family: "Minecraftia", monospace !important;
 }
 
 /* CONTENT FOR WHEN IFRAME USED*/
@@ -147,8 +157,6 @@ iframe {
     height: 100%;
     border: none;
 }
-
-
 
 /* Media query for smaller devices */
 @media (max-width: 768px) {
@@ -177,7 +185,29 @@ iframe {
     }
 
     .content{
-        font-size: 1.3vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.4vw; /* Increase font size */
+        text-align: center;
+        overflow: hidden;
+        height: 100%; 
+        width: 100%;
+        margin-top: -4vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        font-family: "Minecraftia", monospace !important;
+        line-height: 1.5; /* Adjust line spacing for better readability */
+        word-wrap: break-word; /* Allow text wrapping */
+    }
+
+    .content.no-padding {
+        padding: 0;
+        height: 88%;
+        /* round border radii */
+        border-bottom-left-radius: 10px; 
+        border-bottom-right-radius: 10px; 
+        margin: 0;
     }
 
     .tab {
