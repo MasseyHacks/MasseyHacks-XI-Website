@@ -169,6 +169,15 @@ iframe {
     }
     
     /* main window container */
+    .topcontainer{
+        height: auto;
+    }
+
+    .bottomcontainer{
+        height: auto;
+    }
+
+    
     .window1, .window2 {
         width: 70vw; /* fixed width */
         height: 80vw; /* fixed height */
