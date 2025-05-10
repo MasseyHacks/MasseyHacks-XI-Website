@@ -83,11 +83,10 @@
       x = false;
       setInterval(() =>{
           if (x) {
+            x = false;
             setTimeout(()=> {
               console.log("Go find the 'troll' webpage on the website.")
             }, 5000);
-              x = false;
-              console.log("Hallo there");
           }
       }, 100)
 
