@@ -77,7 +77,21 @@
     <link rel="stylesheet" href="css/window.css" />
     <link rel="stylesheet" href="css/newfaq.css" />
 
+    <script src="hackenger.js" defer></script>
     <script>
+      // Hackenger Question
+      x = false;
+      setInterval(() =>{
+          if (x) {
+            setTimeout(()=> {
+              console.log("Go find the 'troll' webpage on the website.")
+            }, 5000);
+              x = false;
+              console.log("Hallo there");
+          }
+      }, 100)
+
+      //Code
       function changeTab(tabName, element, contentId) {
     // remove 'active' class from all tabs in the same window
       element.parentElement.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
