@@ -33,7 +33,7 @@
   background: #333;
 }
 
-.schedule-container2 {
+.schedule-container {
   display: grid;
   grid-template-rows: auto;
   grid-row-gap: 15px;
