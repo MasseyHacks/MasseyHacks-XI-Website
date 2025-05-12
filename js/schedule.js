@@ -215,7 +215,7 @@ const initTimeLine = (timeLine) => {
     24,
     "Hacking Period",
     "11:00AM - 11:00AM | ",
-    "#AC4AAA",
+    "#EEAF61",
     //"#868afc",
     "Let the coding begin! Create a project. Good luck."
   );
@@ -224,41 +224,32 @@ const initTimeLine = (timeLine) => {
     11,
     0.5,
     1,
-    "Cupstacking",
+    "Super Smash Bros Ultimate",
     "7:30PM - 8:30PM | Cafeteria",
-    "#C053A8",
-    "A MasseyHacks favourite is back in the game! Reach for the stars by creating the tallest possible cup tower... with a twist!"
+    "#EE5D6C",
+    "Compete against hackers to be crowed the winner of this tournament!"
   );
   timeLine.setTimeCell(
     2,
     14,
     0,
     1,
-    "Karaoke",
+    "Werewolf",
     "10:00PM - 11:00PM | Cafeteria",
-    "#C053A8",
-    "Ignore all your stage fright, pick up the mic and sing to your heart's content. Have fun!"
+    "#EE5D6C",
+    ""
   );
   timeLine.setTimeCell(
     2,
     16,
     0,
     1,
-    "Minecraft Bedwars",
+    "Online Events",
     "12:00AM - 1:00AM | Online",
-    "#C053A8",
-    "Midnight Minecraft (Java edition) :D"
+    "#EE5D6C",
+    "Play a variety of iconic online games! You'll have options of Minecraft, Gartic Phone, Scribl.io, and much more :D"
   );
-  // timeLine.setTimeCell(
-  //   2,
-  //   17,
-  //   0,
-  //   1,
-  //   "Minecraft Bedwars",
-  //   "1:30AM - 2:00AM | Online",
-  //   "#9EF1EB",
-  //   ""
-  // );
+
   timeLine.setTimeCell(
     2,
     26,
@@ -266,28 +257,18 @@ const initTimeLine = (timeLine) => {
     1,
     "Submission Help",
     "10:00AM - 11:00PM | Cafeteria",
-    "#AC4AAA",
+    "#EEAF61",
     "Ready to submit your project? If you're not sure how, come to the cafeteria and we have people here to help you out!"
-  );
-  timeLine.setTimeCell(
-    2,
-    27,
-    0,
-    1,
-    "Therapy Dogs",
-    "11:00AM - 12:00PM | Room 101",
-    "#C053A8",
-    ""
   );
   timeLine.setTimeCell(
     2,
     32,
     0,
-    0.5,
+    1,
     "Trivia",
-    "4:00PM - 4:30PM | North Gym",
-    "#C053A8",
-    "Nothing to do while waiting for closing ceremonies? Come relax with some MasseyHacks trivia and some snacks to spend the time!"
+    "4:00PM - 5:00PM | South Gym",
+    "#EE5D6C",
+    "Nothing to do while waiting for closing ceremonies? Come relax with some MasseyHacks trivia to spend the time!"
   );
   timeLine.setTimeCell(
     1,
@@ -296,9 +277,9 @@ const initTimeLine = (timeLine) => {
     1,
     "Check-In",
     "9:00AM - 10:00AM | Front Desk",
-    "#2B29A0",
+    "#6A0D83",
     //"#25137B",
-    "Get ready to kick off an amazing start to MasseyHacksX! Get swag, stickers and super cool stuff all for FREE. Remember to bring your ID."
+    "Get ready to kick off an amazing start to MasseyHacksXI! Get swag, stickers and super cool stuff all for FREE. Remember to bring your ID."
   );
   timeLine.setTimeCell(
     1,
@@ -306,8 +287,8 @@ const initTimeLine = (timeLine) => {
     0.5,
     0.5,
     "Opening Ceremony",
-    "10:30AM - 11:00AM | North Gym",
-    "#6432AA",
+    "10:30AM - 11:00AM | South Gym",
+    "#EEAF61",
     //"#9EF1EB",
     "Official launch to the event: acknowledgements, information, and more."
   );
@@ -315,22 +296,22 @@ const initTimeLine = (timeLine) => {
   timeLine.setTimeCell(
     1,
     14,
-    0.5,
+    0.625,
     0.5,
     "Check-Out",
-    "10:30PM - 11:00PM | Front Desk",
-    "#2B29A0",
+    "10:45PM - 11:15PM | Front Desk",
+    "#6A0D83",
     //"#FFC3C3",
     "Go home. Time to work on your projects or perhaps get some sleep."
   );
   timeLine.setTimeCell(
     2,
     33,
-    0,
+    0.5,
     0.5,
     "Check-Out",
-    "5:00PM - 5:30PM | Front Desk",
-    "#2B29A0",
+    "5:30PM - 6:30PM | Front Desk",
+    "#6A0D83",
     "End of MasseyHacks. Thanks for participating!"
   );
   timeLine.setTimeCell(
@@ -340,18 +321,18 @@ const initTimeLine = (timeLine) => {
     1,
     "Check-In",
     "8:00AM - 9:00AM | Front Desk",
-    "#2B29A0",
+    "#6A0D83",
     "Start the final day of MasseyHacks. ID!"
   );
 
   timeLine.setTimeCell(
     1,
-    32,
-    0.5,
+    33,
+    0,
     0.5,
     "Closing Ceremony",
-    "4:30PM - 5:00PM | North Gym",
-    "#6432AA",
+    "5:00PM - 5:30PM | North Gym",
+    "#EEAF61",
     "Closing remarks, awards ceremonies and more."
   );
 
@@ -362,7 +343,7 @@ const initTimeLine = (timeLine) => {
     1.25,
     "Breakfast Snacks",
     "9:00AM - 10:15AM | Cafeteria",
-    "#4B2EA5",
+    "#CE4993",
     //"#D8BBFF",
     "Fuel up with breakfast snacks before the event starts!"
   );
@@ -373,7 +354,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Lunch",
     "12:30PM - 1:30PM | Cafeteria",
-    "#4B2EA5",
+    "#CE4993",
     //"#D8BBFF",
     "FOOOD"
   );
@@ -382,71 +363,32 @@ const initTimeLine = (timeLine) => {
     3,
     0.125,
     1,
-    "Web Design Basics I",
+    "Introduction to Front End",
     "11:15AM - 12:15PM | Room 149",
     "#7E37AF",
     //"#a8d4ff",
     "HTML, CSS and JavaScript are the foundation of the Web. This workshop will quickly explain the basic setup of the Web then equip participants with the tools to create simple web pages using HTML. Participants will learn HTML by working through practical exercises.");
-  timeLine.setTimeCell(
-    2,
-    3,
-    0.125,
-    1,
-    "Making a Website with Sveltekit",
-    "11:15AM - 12:15PM | Room 101",
-    "#7E37AF",
-    //"#a8d4ff",
-    "In this workshop, you'll learn how to quickly spin up a website with the help of the Sveltekit. Sveltekit is a set of tools that allow us to build highly reactive and responsive websites without the steep learning curve or bulky code that comes with some other frameworks.");
+
   timeLine.setTimeCell(
     1,
     6,
-    0.5,
+    0.625,
     1,
-    "Web Design Basics II",
-    "2:30PM - 3:30PM | Room 149",
+    "Introduction to Pytorch",
+    "2:45PM - 3:45PM | Room 149",
     "#7E37AF",
     //"#a8d4ff",
-    "The focus in this workshop is how to make websites more attractive by using CSS. Participants will learn the two fundamental parts of CSS, how to target only the elements you want and how to change them to look the way you want. JavaScript will be introduced in a very limited way.");
+    "");
 
     timeLine.setTimeCell(
       1,
       8,
       0,
       1,
-      "Get Plugged into Windsor-Essex's Tech Scene",
+      "Optimotive Workshop",
       "4:00PM - 5:00PM | Room 101",
       "#7E37AF",
-      "Join us for the &quot;Getting Plugged into the Windsor Essex Tech Scene&quot; workshop! We&#39;ll explore local entrepreneurship resources, brainstorm ways to enhance tech programming and discover networking opportunities within our city&#39;s tech community. This workshop will help you uncover the power of Windsor Essex&#39;s tech ecosystem!");
-
-      timeLine.setTimeCell(
-        2,
-        8,
-        0,
-        1,
-        "Defang Workshop",
-        "4:00PM - 5:00PM | Room 149",
-        "#7E37AF",
-        "This workshop will teach students how to easily create, deploy, and update a cloud project using the Defang tool. This is the perfect workshop for you if you are looking to deploy your project. There's also a category prize for the team with the best use of Defang!");
-
-        timeLine.setTimeCell(
-          2,
-          9,
-          0.125,
-          1,
-          "Careers in Tech",
-          "5:15PM - 6:00PM | Room 101",
-          "#7E37AF",
-          "Want to know what it takes to work in software development? From an Amazon Software Engineer?! After a development process introduction by Rocket Innovation Studios, the workshop will be an open forum for students to ask panelists about their experiences through education, internships, starting their career, and working in the software industry.");
-
-          timeLine.setTimeCell(
-            2,
-            12,
-            0.875,
-            1,
-            "Intro to CS (NOT programming)",
-            "8:45PM - 9:45PM | Room 101",
-            "#7E37AF",
-            "Do you know the difference between Computer Science and Software Engineering? Gordon Lin, a current Waterloo CS student, is here to explain it!");
+      "");
  
   timeLine.setTimeCell(
     2,
@@ -455,7 +397,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Dinner",
     "6:00PM - 7:00PM | Cafeteria",
-    "#4B2EA5",
+    "#CE4993",
     "MORE FOOOD"
   );
 
@@ -466,7 +408,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Breakfast",
     "8:30AM - 9:30AM | Cafeteria",
-    "#4B2EA5",
+    "#CE4993",
     //"#D8BBFF",
     "Pancake breakfast????"
   );
@@ -478,44 +420,20 @@ const initTimeLine = (timeLine) => {
     1.5,
     "Lunch",
     "12:30PM - 2:00PM | Cafeteria",
-    "#4B2EA5",
+    "#CE4993",
     //"#D8BBFF",
     "Last meal before the end of MasseyHacks."
   );
 
   timeLine.setTimeCell(
     3,
-    3,
+    9,
     0,
-    0.5,
-    "Team Formation",
-    "11:00AM - 11:30AM | North Gym",
-    "#9541AC",
-    //"#FECCFF",
-    "Unsure who to work with or interested in making some new friends? Find your perfect partners and join up to create the project of your dreams!"
-  );
-
-  timeLine.setTimeCell(
-    3,
-    3,
-    0,
-    0.5,
-    "Team Formation",
-    "11:00AM - 11:30AM | North Gym",
-    "#A246AB",
-    //"#FECCFF",
-    "Unsure who to work with or interested in making some new friends? Find your perfect partners and join up to create the project of your dreams!"
-  );
-
-  timeLine.setTimeCell(
-    3,
-    6,
-    0,
-    1.5,
-    "Innovation Fair",
-    "2:00PM - 3:30PM | Cafeteria",
-    "#9541AC",
-    "Sponsors will be hosting booths in the cafeteria. Talk to them to learn more about their company and maybe even get some free swag!");
+    1,
+    "Bandana Decorating",
+    "5:00PM - 6:00PM | Room 101",
+    "#EE5D6C",
+    "Decorate your MasseyHacks bandana with colours! Come join us in making the event more colourful :)");
   timeLine.setTimeCell(
     3,
     10,
@@ -523,7 +441,7 @@ const initTimeLine = (timeLine) => {
     18,
     "Hackenger Hunt",
     "6:30PM - 12:00PM | Online",
-    "#9541AC",
+    "#7E37AF",
     "Put your puzzle-solving skills to the test with the Hackenger Hunt! In this event, you'll be given 15 creative tech-related challenges to solve, ranging from easy to difficult. Top scorers will receive stickers, limited-edition swag, and/or a gift card!"
   );
 
@@ -534,7 +452,7 @@ const initTimeLine = (timeLine) => {
     2,
     "Judging",
     "2:00PM - 4:00PM | Cafeteria",
-    "#AC4AAA",
+    "#EEAF61",
     "Get ready for presentations and displaying the project you worked hard on. Be proud of your accomplishments!"
   );
 };
