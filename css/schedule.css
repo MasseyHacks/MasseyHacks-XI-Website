@@ -46,7 +46,7 @@
   border-radius: 1rem;
   background: var(--dark-blue);
   /* background: rgba(255, 255, 255, 0.5); */
-  box-shadow: 0px 0px 30px  #BB00FF;
+  /* box-shadow: 0px 0px 30px  #BB00FF; */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -187,7 +187,7 @@
   color: var(--dark-color);
   border-radius: 10px;
   padding: 1em;
-  box-shadow: 0 0 50px #9000ff;
+  /* box-shadow: 0 0 50px #9000ff; */
   position: absolute;
   bottom: 0;
   z-index: 999999;
