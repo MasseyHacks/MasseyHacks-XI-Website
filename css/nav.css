@@ -136,12 +136,12 @@ nav {
   }
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .nav-active .unstyled-list {
-    background: rgba(40, 36, 127, 0.8);
+    background: rgba(75, 75, 203, 0.5);
   }
 
   .nav-active .nav-burger {
-    background: rgba(40, 36, 127, 0.8);
+    background: rgba(75, 75, 203, 0.5);
   }
-}
+} */
