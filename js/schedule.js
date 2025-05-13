@@ -219,23 +219,33 @@ const initTimeLine = (timeLine) => {
     //"#868afc",
     "Let the coding begin! Create a project. Good luck."
   );
-  timeLine.setTimeCell(
+    timeLine.setTimeCell(
     2,
     11,
     0.5,
+    0.5,
+    "Tech Together",
+    "7:30PM - 8:00PM | Cafeteria",
+    "#EE5D6C",
+    ""
+  );
+  timeLine.setTimeCell(
+    2,
+    13,
+    0,
     1,
     "Super Smash Bros Ultimate",
-    "7:30PM - 8:30PM | Cafeteria",
+    "9:00PM - 10:00PM | Cafeteria",
     "#EE5D6C",
     "Compete against hackers to be crowed the winner of this tournament!"
   );
   timeLine.setTimeCell(
     2,
-    14,
-    0,
-    1,
+    12,
+    0.25,
+    0.5,
     "Werewolf",
-    "10:00PM - 11:00PM | Cafeteria",
+    "8:15PM - 8:45PM | Cafeteria",
     "#EE5D6C",
     ""
   );
@@ -378,7 +388,20 @@ const initTimeLine = (timeLine) => {
     "2:45PM - 3:45PM | Room 149",
     "#7E37AF",
     //"#a8d4ff",
+    "Come join for an introduction to AI! Learn what a neural network is, and how to create and train your own. This workshop will be easier if you have any prior coding knowledge, especially in Python, but it is not necessary. All you need to do beforehand is install Python and Pytorch, and we will start from there.");
+
+    timeLine.setTimeCell(
+    1,
+    6,
+    0,
+    0.5,
+    "Github Copilot",
+    "2:00PM - 2:30PM | Room 149",
+    "#7E37AF",
+    //"#a8d4ff",
     "");
+
+
 
     timeLine.setTimeCell(
       1,
