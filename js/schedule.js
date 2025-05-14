@@ -306,7 +306,7 @@ const initTimeLine = (timeLine) => {
   timeLine.setTimeCell(
     1,
     14,
-    0.625,
+    0.75,
     0.5,
     "Check-Out",
     "10:45PM - 11:15PM | Front Desk",
@@ -341,7 +341,7 @@ const initTimeLine = (timeLine) => {
     0,
     0.5,
     "Closing Ceremony",
-    "5:00PM - 5:30PM | North Gym",
+    "5:00PM - 5:30PM | South Gym",
     "#EEAF61",
     "Closing remarks, awards ceremonies and more."
   );
@@ -371,7 +371,7 @@ const initTimeLine = (timeLine) => {
   timeLine.setTimeCell(
     1,
     3,
-    0.125,
+    0.25,
     1,
     "Introduction to Front End",
     "11:15AM - 12:15PM | Room 149",
@@ -382,7 +382,7 @@ const initTimeLine = (timeLine) => {
   timeLine.setTimeCell(
     1,
     6,
-    0.625,
+    0.75,
     1,
     "Introduction to Pytorch",
     "2:45PM - 3:45PM | Room 149",
@@ -409,7 +409,7 @@ const initTimeLine = (timeLine) => {
       0,
       1,
       "Optimotive Workshop",
-      "4:00PM - 5:00PM | Room 101",
+      "4:00PM - 5:00PM | Room 149",
       "#7E37AF",
       "");
  
