@@ -227,7 +227,7 @@ const initTimeLine = (timeLine) => {
     "Tech Together",
     "7:30PM - 8:00PM | Cafeteria",
     "#EE5D6C",
-    ""
+    "Join this underrepresented genders (and allies!) meetup for the opportunity to connect, share ideas, and meet other hackers who identify as an underrepresented gender."
   );
   timeLine.setTimeCell(
     2,
@@ -237,7 +237,7 @@ const initTimeLine = (timeLine) => {
     "Super Smash Bros Ultimate",
     "9:00PM - 10:00PM | Cafeteria",
     "#EE5D6C",
-    "Compete against hackers to be crowed the winner of this tournament!"
+    "Compete against hackers to be crowned the winner of this tournament!"
   );
   timeLine.setTimeCell(
     2,
@@ -247,7 +247,7 @@ const initTimeLine = (timeLine) => {
     "Werewolf",
     "8:15PM - 8:45PM | Cafeteria",
     "#EE5D6C",
-    ""
+    "A hackathon staple! A fun twist on Mafia for a large group to enjoy."
   );
   timeLine.setTimeCell(
     2,
@@ -272,11 +272,11 @@ const initTimeLine = (timeLine) => {
   );
   timeLine.setTimeCell(
     2,
-    32,
+    30,
     0,
-    1,
+    0.5,
     "Trivia",
-    "4:00PM - 5:00PM | South Gym",
+    "2:00PM - 2:30PM | South Gym",
     "#EE5D6C",
     "Nothing to do while waiting for closing ceremonies? Come relax with some MasseyHacks trivia to spend the time!"
   );
@@ -316,11 +316,11 @@ const initTimeLine = (timeLine) => {
   );
   timeLine.setTimeCell(
     2,
-    33,
-    0.5,
+    31,
+    0,
     0.5,
     "Check-Out",
-    "5:30PM - 6:30PM | Front Desk",
+    "3:00PM - 3:30PM | Front Desk",
     "#6A0D83",
     "End of MasseyHacks. Thanks for participating!"
   );
@@ -337,11 +337,11 @@ const initTimeLine = (timeLine) => {
 
   timeLine.setTimeCell(
     1,
-    33,
-    0,
+    30,
+    0.5,
     0.5,
     "Closing Ceremony",
-    "5:00PM - 5:30PM | South Gym",
+    "2:30PM - 3:00PM | South Gym",
     "#EEAF61",
     "Closing remarks, awards ceremonies and more."
   );
@@ -377,7 +377,18 @@ const initTimeLine = (timeLine) => {
     "11:15AM - 12:15PM | Room 149",
     "#7E37AF",
     //"#a8d4ff",
-    "HTML, CSS and JavaScript are the foundation of the Web. This workshop will quickly explain the basic setup of the Web then equip participants with the tools to create simple web pages using HTML. Participants will learn HTML by working through practical exercises.");
+    "Come learn the basics on how to make a website, where you'll learn how to write HTML, CSS and some basic JavaScript from a seasoned industry professional. You'll also learn how to navigate the browser developer tools, to help you understand how to debug your website with more accuracy and confidence. All you'll need to get started is your laptop, your favourite code editor and your curiosity!");
+
+     timeLine.setTimeCell(
+    2,
+    3,
+    0.25,
+    1,
+    "Introduction to Arduino",
+    "11:15AM - 12:15PM | Room 101",
+    "#7E37AF",
+    //"#a8d4ff",
+    "Learn how to program an Arduino with Mr. McKenzie!");
 
   timeLine.setTimeCell(
     1,
@@ -399,8 +410,7 @@ const initTimeLine = (timeLine) => {
     "2:00PM - 2:30PM | Room 149",
     "#7E37AF",
     //"#a8d4ff",
-    "");
-
+    "Elevate your hackathon game in just under an hour! Join this workshop on Making Better Hacks, Faster with GitHub Copilot, and discover how this AI companion transforms the coding experience for beginners and seasoned developers. Copilot isn't just another tool you can use to speed up your development; it's like having another hacker on your team!");
 
 
     timeLine.setTimeCell(
@@ -438,11 +448,11 @@ const initTimeLine = (timeLine) => {
 
   timeLine.setTimeCell(
     2,
-    28,
-    0.5,
-    1.5,
+    27,
+    0,
+    1.25,
     "Lunch",
-    "12:30PM - 2:00PM | Cafeteria",
+    "11:00AM - 12:15PM | Cafeteria",
     "#CE4993",
     //"#D8BBFF",
     "Last meal before the end of MasseyHacks."
@@ -465,16 +475,16 @@ const initTimeLine = (timeLine) => {
     "Hackenger Hunt",
     "6:30PM - 12:00PM | Online",
     "#7E37AF",
-    "Put your puzzle-solving skills to the test with the Hackenger Hunt! In this event, you'll be given 15 creative tech-related challenges to solve, ranging from easy to difficult. Top scorers will receive stickers, limited-edition swag, and/or a gift card!"
+    "Put your puzzle-solving skills to the test with the Hackenger Hunt! In this event, you'll be given 15 creative tech-related challenges to solve, ranging from easy to difficult. Top scorers will receive stickers, limited-edition swag."
   );
 
   timeLine.setTimeCell(
     3,
-    30,
-    0,
-    2,
+    28,
+    0.5,
+    1.5,
     "Judging",
-    "2:00PM - 4:00PM | Cafeteria",
+    "12:30PM - 2:00PM | Cafeteria",
     "#EEAF61",
     "Get ready for presentations and displaying the project you worked hard on. Be proud of your accomplishments!"
   );
